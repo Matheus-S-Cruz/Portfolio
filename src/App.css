@@ -1,0 +1,69 @@
+body{
+  background-color: #333;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.contato {
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  margin-left: 30%;
+}
+.logo {
+  height: 40px;  
+}
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.topnav {
+  width:100%;
+	height: 55px;
+  overflow: hidden;
+	background-color:#666;
+	border-radius: 14px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 32px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
