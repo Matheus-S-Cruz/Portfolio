@@ -1,5 +1,6 @@
 body{
   background-color: #333;
+  color: #fff;
 }
 #root {
   max-width: 1280px;
@@ -16,23 +17,25 @@ body{
 .logo {
   height: 40px;  
 }
+.pagina {
+  display: grid;
+  place-items: center;
+}
 .typewriter{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
+  width: 39ch;
+  animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #04AA6D;
+  font-family: monospace;
+  font-size: 2em;
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
 }
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+@keyframes blink {
+  50% {
+    border-color: transparent}
 }
 .topnav {
   width:100%;
@@ -66,4 +69,72 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.portfolio{
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #04AA6D;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  
+}
+.portfolio:hover {
+  background: #04aa6d;
+  box-shadow: 0 0 30px 5px rgba(0, 218, 47, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.portfolio:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.portfolio::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.portfolio:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
