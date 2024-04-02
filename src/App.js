@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Home} from './components/home.js';
 import {NavBar} from './components/NavBar.js';
 import {Materias} from './components/materias.js';

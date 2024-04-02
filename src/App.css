@@ -1,6 +1,7 @@
 body{
   background-color: #333;
   color: #fff;
+  text-align: center;
 }
 #root {
   padding: 2rem;
@@ -17,9 +18,10 @@ body{
 .pagina {
   display: grid;
   place-items: center;
+  margin-top: 40px;
 }
 .typewriter{
-  width: 39ch;
+  width: 27ch;
   animation: typing 2s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -66,6 +68,21 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+  margin-top: 140px;
+}
+
+.fotoperfil {
+  width: 50%;
 }
 .portfolio{
   position: relative;
@@ -205,7 +222,8 @@ body{
   border: 1px solid rgb(8, 59, 117);
   background-color: #91AA9D;
   letter-spacing: 7px;
-
+  background-color: #91AA9D; /* Alterar a cor de fundo ativa */
+  border-color: #91AA9D; /* Alterar a cor da borda ativa */
 
 }
 

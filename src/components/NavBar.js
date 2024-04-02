@@ -11,6 +11,7 @@ export const NavBar = () =>{
         <a className="active" href="#home">Home</a>
         <a href="#sobre">Sobre</a>
         <a href="#materias">Matérias</a>
+        <a href="#tecnico">Técnico</a>
 
         <div id='contato' className="contato">
         <a href="https://www.linkedin.com/in/matheus-cruz-12ab9a248/"><img className='logo' src={linkedin}/></a>

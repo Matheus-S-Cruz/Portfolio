@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { Cards } from "./materiasCard";
 import memerev from '../images/memerev.png'
@@ -12,7 +13,8 @@ import revista from '../images/revista.png'
 import past from '../images/past.png'
 import modernismo from '../images/modernismo.png'
 
-export const Materias = () =>{
+export const Materias = () => {
+  const [selectedCategory, setSelectedCategory] = useState("natureza");
 
   const natureza = [
     {
@@ -21,17 +23,17 @@ export const Materias = () =>{
       imgUrl: memerev,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Circuitos",
       descricao: "Design & Development",
       imgUrl: circuitos,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Bagulho lá de Orgânica",
       descricao: "Design & Development",
       imgUrl: organica,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Pesquisa Genética",
       descricao: "Design & Development",
       imgUrl: genetica,
     },
@@ -39,7 +41,7 @@ export const Materias = () =>{
 
   const matematica = [
     {
-      titulo: "Business Startup",
+      titulo: "Vídeo de Trigonometria",
       descricao: "Design & Development",
       imgUrl: trigonometria,
     },
@@ -47,17 +49,17 @@ export const Materias = () =>{
 
   const humanas = [
     {
-      titulo: "Business Startup",
+      titulo: "Estudo de Madagascar",
       descricao: "Design & Development",
       imgUrl: madagascar,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Alemanha durante a 2ª Revolução Industrial",
       descricao: "Design & Development",
       imgUrl: revolucao,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Reflexão sobre o filme 1917",
       descricao: "Design & Development",
       imgUrl: filme1917,
     },
@@ -65,17 +67,17 @@ export const Materias = () =>{
 
   const linguagens = [
     {
-      titulo: "Business Startup",
+      titulo: "Revista Literária",
       descricao: "Design & Development",
       imgUrl: revista,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Trabalho Past Simple",
       descricao: "Design & Development",
       imgUrl: past,
     },
     {
-      titulo: "Business Startup",
+      titulo: "Projeto Modernismo",
       descricao: "Design & Development",
       imgUrl: modernismo,
     },
@@ -86,85 +88,61 @@ export const Materias = () =>{
       <Container>
         <Row>
           <Col>
-              <h2>Projetos das Matérias</h2>
-              <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="natureza">Natureza</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="matematica">Matemática</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="humanas">Humanas</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="linguagens">Linguagens</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="natureza">
-                      <Row>
-                        {
-                          natureza.map((natureza, index) => {
-                            return (
-                              <Cards
-                                key={index}
-                                {...natureza}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="matematica">
-                      <Row>
-                        {
-                          matematica.map((matematica, index) => {
-                            return (
-                              <Cards
-                                key={index}
-                                {...matematica}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="humanas">
-                      <Row>
-                        {
-                          humanas.map((humanas, index) => {
-                            return (
-                              <Cards
-                                key={index}
-                                {...humanas}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="linguagens">
-                      <Row>
-                        {
-                          linguagens.map((linguagens, index) => {
-                            return (
-                              <Cards
-                                key={index}
-                                {...linguagens}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>     
-                    </Tab.Content>               
-
-              </Tab.Container>
+            <h2 id="materias">Projetos das Matérias</h2>
+            <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
+              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                <Nav.Item>
+                  <Nav.Link eventKey="natureza">Natureza</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="matematica">Matemática</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="humanas">Humanas</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="linguagens">Linguagens</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <br />
+              <Tab.Content>
+                <Tab.Pane eventKey="natureza">
+                  <Row>
+                    {selectedCategory === "natureza" &&
+                      natureza.map((projeto, index) => (
+                        <Cards key={index} {...projeto} />
+                      ))}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="matematica">
+                  <Row>
+                    {selectedCategory === "matematica" &&
+                      matematica.map((projeto, index) => (
+                        <Cards key={index} {...projeto} />
+                      ))}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="humanas">
+                  <Row>
+                    {selectedCategory === "humanas" &&
+                      humanas.map((projeto, index) => (
+                        <Cards key={index} {...projeto} />
+                      ))}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="linguagens">
+                  <Row>
+                    {selectedCategory === "linguagens" &&
+                      linguagens.map((projeto, index) => (
+                        <Cards key={index} {...projeto} />
+                      ))}
+                  </Row>
+                </Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
