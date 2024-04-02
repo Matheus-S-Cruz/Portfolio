@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const Cards = ({ titulo, descricao, imgUrl }) => {
+export const TecnicoCards = ({ titulo, descricao, imgUrl }) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">

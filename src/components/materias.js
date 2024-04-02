@@ -1,134 +1,170 @@
-/*import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { materiasCard } from "./materiasCard";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Cards } from "./materiasCard";
+import memerev from '../images/memerev.png'
+import circuitos from '../images/circuitos.png'
+import organica from '../images/organica.png'
+import genetica from '../images/genetica.png'
+import trigonometria from '../images/trigonometria.png'
+import madagascar from '../images/madagascar.png'
+import revolucao from '../images/revolucao.png'
+import filme1917 from '../images/filme1917.png'
+import revista from '../images/revista.png'
+import past from '../images/past.png'
+import modernismo from '../images/modernismo.png'
 
 export const Materias = () =>{
 
   const natureza = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      titulo: "Meme Revolucionismo",
+      descricao: "Design & Development",
+      imgUrl: memerev,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: circuitos,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: organica,
+    },
+    {
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: genetica,
     },
   ];
 
   const matematica = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: trigonometria,
     },
   ];
 
   const humanas = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: madagascar,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: revolucao,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: filme1917,
     },
   ];
 
   const linguagens = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: revista,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: past,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      titulo: "Business Startup",
+      descricao: "Design & Development",
+      imgUrl: modernismo,
     },
-  ];
+  ]
 
   return (
-    <section className="project" id="projects">
+    <section className="project" id="project">
       <Container>
         <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+          <Col>
+              <h2>Projetos das Matérias</h2>
+              <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="natureza">Natureza</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="matematica">Matemática</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="humanas">Humanas</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="linguagens">Linguagens</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                  <Tab.Content>
+                    <Tab.Pane eventKey="natureza">
                       <Row>
                         {
-                          natureza.map((project, index) => {
+                          natureza.map((natureza, index) => {
                             return (
-                              <materiasCard
+                              <Cards
                                 key={index}
-                                {...project}
+                                {...natureza}
                                 />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="matematica">
+                      <Row>
+                        {
+                          matematica.map((matematica, index) => {
+                            return (
+                              <Cards
+                                key={index}
+                                {...matematica}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="humanas">
+                      <Row>
+                        {
+                          humanas.map((humanas, index) => {
+                            return (
+                              <Cards
+                                key={index}
+                                {...humanas}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
+                    <Tab.Pane eventKey="linguagens">
+                      <Row>
+                        {
+                          linguagens.map((linguagens, index) => {
+                            return (
+                              <Cards
+                                key={index}
+                                {...linguagens}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>     
+                    </Tab.Content>               
+
+              </Tab.Container>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
-  );
+  )
 }
-*/
