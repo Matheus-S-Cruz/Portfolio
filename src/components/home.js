@@ -6,7 +6,7 @@ export const Home = () =>{
     <div>
 
       <div className='pagina'>
-        <h1>Eu sou Matheus Cruz,</h1>
+        <h1>Eu sou Matheus Cruz 3ºA,</h1>
         <div id='home' className='typewriter'><h2>Desenvolvedor em andamento!</h2>
     </div>
 
@@ -20,6 +20,7 @@ export const Home = () =>{
               Atualmente, estou explorando mais na área de Desenvolvimento de Sistemas, e pretendo me aprofundar mais
               em React, Node.js e Java. Meu objetivo é me tornar um desenvolvedor FullStack e conseguir um estágio em uma empresa de tecnologia.
             </p>
+            <a className='carta' href='https://docs.google.com/document/d/1aXWJkpDHYkB9ixQOlVPil4nN9J-Ccd5hnwL2ofaINQs/edit?usp=sharing'>Saiba Mais!</a>
           </div>
           <div className="fotoperfil">
             <img src={choso} alt="choso"/>

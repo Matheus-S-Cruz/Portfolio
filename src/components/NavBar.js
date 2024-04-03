@@ -12,7 +12,8 @@ export const NavBar = () =>{
         <a href="#sobre">Sobre</a>
         <a href="#materias">Matérias</a>
         <a href="#tecnico">Técnico</a>
-
+        <a href='#PPE'>PPE</a>
+      
         <div id='contato' className="contato">
         <a href="https://www.linkedin.com/in/matheus-cruz-12ab9a248/"><img className='logo' src={linkedin}/></a>
         <a href='https://github.com/Matheus-S-Cruz'><img className='logo' src={github}/></a>
