@@ -84,6 +84,19 @@ body{
 .fotoperfil {
   width: 50%;
 }
+.Curriculo{
+  text-align: center;
+}
+.curriculo{
+  margin-bottom: 20px;
+}
+.download{
+  width: 5%;
+  height: 5%;
+}
+.download:hover{
+  cursor:pointer
+}
 .portfolio{
   position: relative;
   padding: 10px 20px;
@@ -152,7 +165,74 @@ body{
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
+.ppe{
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #04AA6D;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 
+}
+.ppe:hover {
+  background: #04aa6d;
+  box-shadow: 0 0 30px 5px rgba(0, 218, 47, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.ppe:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.ppe::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.ppe:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
 .project{
   position: relative;
   padding: 40px 0;
@@ -296,4 +376,92 @@ body{
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
+}
+.tecnico{
+  position: relative;
+  padding: 40px 0;
+  margin-left: 18%;
+}
+
+.tecnico h2{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tecnico p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 36%;
+}
+
+.tecnico .nav.nav-pills {
+  width: 62%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255 / 10%);
+  overflow: hidden;
+}
+
+.tecnico .nav.nav-pills .nav-item{
+  width: 50%;
+}
+
+.tecnico .nav.nav-pills .nav-link{
+  background-color:#183d4e;
+  border-radius: 4;
+  padding: 20px ;
+  color: #ffffff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  position: relative;
+  transition: 1s ease-in-out;
+  text-align: center;
+}
+
+
+.tecnico .nav.nav-pills .nav-link::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+
+.tecnico .nav.nav-pills .nav-link.active::before{
+  width: 20% !important;
+
+
+}
+
+.tecnico .nav.nav-pills .nav-link.active{
+  border: 1px solid rgb(8, 59, 117);
+  background-color: #91AA9D;
+  letter-spacing: 7px;
+  background-color: #91AA9D; /* Alterar a cor de fundo ativa */
+  border-color: #91AA9D; /* Alterar a cor da borda ativa */
+
+}
+
+.nav-link#tecnicos-tabs-tab-desenvolvimento{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link#tecnicos-tabs-tab-implantação{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#tecnicos-tabs-tab-modelagem{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }

@@ -14,7 +14,7 @@ import past from '../images/past.png'
 import modernismo from '../images/modernismo.png'
 
 export const Materias = () => {
-  const [selectedCategory, setSelectedCategory] = useState("natureza");
+  const [selectedCategory, setSelectedCategory] = useState("null");
 
   const natureza = [
     {

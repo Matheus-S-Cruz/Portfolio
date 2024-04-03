@@ -7,7 +7,9 @@ import {Cards} from './components/materiasCard.js'
 import {Tecnico} from './components/tecnico.js'
 import {Skills} from './components/skills.js'
 import {TecnicoCards} from './components/teccards.js'
-
+import {Portfolios} from './components/portfolios.js'
+import {PPE} from './components/ppe.js'
+import {Curriculo} from './components/curriculo.js'
 import './App.css'
 
 
@@ -22,11 +24,18 @@ function App() {
     <div>
       <NavBar/>
       <Home/>
+      <br/>
+      <Skills/>
+      <br/>
+      <Curriculo/>
+      <br/>
       <Materias/>
       <Cards/>
       <Tecnico/>
       <TecnicoCards/>
-      <Skills/> 
+      <PPE/>
+      <br/>
+      <Portfolios/>
     </div>
   );
 }

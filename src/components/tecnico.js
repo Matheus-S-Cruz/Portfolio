@@ -6,7 +6,7 @@ import circuitos from '../images/circuitos.png'
 import diagrama from '../images/diagrama.png'
 
 export const Tecnico = () => {
-  const [selectedCategory, setSelectedCategory] = useState("desenvolvimento");
+  const [selectedCategory, setSelectedCategory] = useState("null");
 
   const desenvolvimento = [
     {
@@ -34,12 +34,12 @@ export const Tecnico = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="tecnico" id="tecnico">
       <Container>
         <Row>
           <Col>
             <h2 id="tecnico">Projetos do Técnico</h2>
-            <Tab.Container id="projects-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
+            <Tab.Container id="tecnicos-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
                   <Nav.Link eventKey="desenvolvimento">Desenvolvimento De Sistemas</Nav.Link>

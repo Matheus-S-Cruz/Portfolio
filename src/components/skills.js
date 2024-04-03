@@ -1,7 +1,7 @@
 export const Skills = () =>{
 
     return (
-      <div>
+      <div className="Skills">
         
       </div>
     );
