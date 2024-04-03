@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { TecnicoCards } from './teccards'
-import memerev from '../images/memerev.png'
+import calculadora from '../images/calculadora.png'
 import circuitos from '../images/circuitos.png'
 import diagrama from '../images/diagrama.png'
 
@@ -10,9 +10,9 @@ export const Tecnico = () => {
 
   const desenvolvimento = [
     {
-      titulo: "Meme Revolucionismo",
+      titulo: "Calculadora de Horas",
       descricao: "Design & Development",
-      imgUrl: memerev,
+      imgUrl: calculadora,
     },
     {
       titulo: "Circuitos",
