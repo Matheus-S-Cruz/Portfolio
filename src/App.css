@@ -97,6 +97,49 @@ body{
 .download:hover{
   cursor:pointer
 }
+.skills {
+  width: 410px;
+  height: 254px;
+  border-radius: 4px;
+  background: #333;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+  margin: 0 auto;
+}
+
+.skills p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #333;
+  border: 1px solid #04AA6D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills p:hover {
+  flex: 4;
+}
+
+.skills p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #04AA6D;
+  letter-spacing: .1em;
+}
+
+.skills p:hover span {
+  transform: rotate(0);
+}
 .portfolio{
   position: relative;
   padding: 10px 20px;
