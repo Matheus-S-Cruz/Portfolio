@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { TecnicoCards } from './teccards'
 import calculadora from '../images/calculadora.png'
-import circuitos from '../images/circuitos.png'
+import livro from '../images/livro.png'
 import diagrama from '../images/diagrama.png'
 
 export const Tecnico = () => {
@@ -15,9 +15,9 @@ export const Tecnico = () => {
       imgUrl: calculadora,
     },
     {
-      titulo: "Circuitos",
+      titulo: "Cadastro de Livros",
       descricao: "Design & Development",
-      imgUrl: circuitos,
+      imgUrl: livro,
     },
   ];
 
