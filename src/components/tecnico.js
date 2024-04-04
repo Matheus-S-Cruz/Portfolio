@@ -7,17 +7,20 @@ import diagrama from '../images/diagrama.png'
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
+  const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const desenvolvimento = [
     {
       titulo: "Calculadora de Horas",
       descricao: "Design & Development",
       imgUrl: calculadora,
+      trimestre: "primeiro"
     },
     {
       titulo: "Cadastro de Livros",
       descricao: "Design & Development",
       imgUrl: livro,
+      trimestre: "primeiro"
     },
   ];
 
@@ -30,6 +33,7 @@ export const Tecnico = () => {
       titulo: "Diagrama Casos de Uso",
       descricao: "Design & Development",
       imgUrl: diagrama,
+      trimestre: "primeiro"
     },
   ];
 
@@ -39,6 +43,15 @@ export const Tecnico = () => {
         <Row>
           <Col>
             <h2 id="tecnico">Projetos do Técnico</h2>
+            <button className="trimestre" onClick={() => setSelectedTrimestre("primeiro")}>
+            <span>1º Trimestre</span>
+            <div class="border full-rounded"></div></button>
+            <button className="trimestre" onClick={() => setSelectedTrimestre("segundo")}>
+            <span>2º Trimestre</span>
+            <div class="border full-rounded"></div></button>
+            <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
+            <span>3º Trimestre</span>
+            <div class="border full-rounded"></div></button>
             <Tab.Container id="tecnicos-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
@@ -55,7 +68,7 @@ export const Tecnico = () => {
                 <Tab.Pane eventKey="desenvolvimento">
                   <Row>
                     {selectedCategory === "desenvolvimento" &&
-                      desenvolvimento.map((projeto, index) => (
+                      desenvolvimento.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
                         <TecnicoCards key={index} {...projeto} />
                       ))}
                   </Row>
@@ -63,7 +76,7 @@ export const Tecnico = () => {
                 <Tab.Pane eventKey="implantação">
                   <Row>
                     {selectedCategory === "implantação" &&
-                      implantação.map((projeto, index) => (
+                      implantação.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
                         <TecnicoCards key={index} {...projeto} />
                       ))}
                   </Row>
@@ -71,7 +84,7 @@ export const Tecnico = () => {
                 <Tab.Pane eventKey="modelagem">
                   <Row>
                     {selectedCategory === "modelagem" &&
-                      modelagem.map((projeto, index) => (
+                      modelagem.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
                         <TecnicoCards key={index} {...projeto} />
                       ))}
                   </Row>

@@ -9,7 +9,7 @@ export const Cards = ({ titulo, descricao, imgUrl, link }) => {
 };
 
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={6} md={6}>
       <div className="proj-imgbx" onClick={handleClick} style={{ cursor: 'pointer' }}>
         <img src={imgUrl}/>
         <div className="proj-txtx">
