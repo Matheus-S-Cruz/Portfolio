@@ -24,7 +24,7 @@ export const Materias = () => {
       link: "https://www.canva.com/design/DAGBcsFb6xQ/MGrunB_UMZN4ImdhJzXvEg/edit?utm_content=DAGBcsFb6xQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
-      titulo: "Circuitos",
+      titulo: "Relatório Circuitos",
       descricao: "Design & Development",
       imgUrl: circuitos,
       link:"https://docs.google.com/document/d/1sjghxCmo8yJ6Sbr6HtbTwanUJxYyZX_3rUkHxwr8lLw/edit?usp=sharing",
@@ -45,8 +45,8 @@ export const Materias = () => {
 
   const matematica = [
     {
-      titulo: "Vídeo de Trigonometria",
-      descricao: "Design & Development",
+      titulo: "Arcos e Ângulos",
+      descricao: "Vídeo de Trigonometria",
       imgUrl: trigonometria,
       link:"https://docs.google.com/document/d/1MSwtlMJp0ExTo8IkjVD7DXWbe0Nl75uTLelr6tSaGMQ/edit?usp=sharing",
     },
