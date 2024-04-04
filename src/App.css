@@ -51,7 +51,7 @@ body{
   padding: 10px 16px;
   text-decoration: none;
   font-size: 20px;
-  height: 32px;
+  height: 54px;
 }
 
 .topnav a:hover {
@@ -375,7 +375,8 @@ body{
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  width: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .proj-imgbx::before{
@@ -425,7 +426,7 @@ body{
 .tecnico{
   position: relative;
   padding: 40px 0;
-  margin-left: 18%;
+  margin-left: 14%;
 }
 
 .tecnico h2{
@@ -500,11 +501,13 @@ body{
 .nav-link#tecnicos-tabs-tab-desenvolvimento{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 80px;
 }
 
 .nav-link#tecnicos-tabs-tab-implantação{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 80px;
 }
 .nav-link#tecnicos-tabs-tab-modelagem{
   border-top: 1px solid rgba(255, 255, 255, 0.5);

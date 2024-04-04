@@ -7,8 +7,9 @@ export const TecnicoCards = ({ titulo, descricao, imgUrl, link }) => {
         window.open(link, '_blank');
     }
   };
+  
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={6} md={5}>
       <div className="proj-imgbx" onClick={handleClick} style={{ cursor: 'pointer' }}>
         <img src={imgUrl}/>
         <div className="proj-txtx">
