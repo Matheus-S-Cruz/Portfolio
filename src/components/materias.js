@@ -21,22 +21,25 @@ export const Materias = () => {
       titulo: "Meme Evolucionismo",
       descricao: "Design & Development",
       imgUrl: memerev,
-      link: "https://drive.google.com/file/d/18-k83FqBysvt-9StJ5jPQ15va8Xs1mvV/view?usp=sharing",
+      link: "https://www.canva.com/design/DAGBcsFb6xQ/MGrunB_UMZN4ImdhJzXvEg/edit?utm_content=DAGBcsFb6xQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
       titulo: "Circuitos",
       descricao: "Design & Development",
       imgUrl: circuitos,
+      link:"https://docs.google.com/document/d/1sjghxCmo8yJ6Sbr6HtbTwanUJxYyZX_3rUkHxwr8lLw/edit?usp=sharing",
     },
     {
       titulo: "Bagulho lá de Orgânica",
       descricao: "Design & Development",
       imgUrl: organica,
+      link:"https://www.canva.com/design/DAF9amqy1uM/OesdO4bOvoUixhsVtgE3zg/edit?utm_content=DAF9amqy1uM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
       titulo: "Pesquisa Genética",
       descricao: "Design & Development",
       imgUrl: genetica,
+      link:"https://docs.google.com/document/d/179xiU96jbA58T24E3e_xVC18_JYpR0wqVXnSDNoal_s/edit?usp=sharing",  
     },
   ];
 
@@ -45,24 +48,28 @@ export const Materias = () => {
       titulo: "Vídeo de Trigonometria",
       descricao: "Design & Development",
       imgUrl: trigonometria,
+      link:"https://docs.google.com/document/d/1MSwtlMJp0ExTo8IkjVD7DXWbe0Nl75uTLelr6tSaGMQ/edit?usp=sharing",
     },
   ];
 
   const humanas = [
     {
-      titulo: "Estudo de Madagascar",
+      titulo: "Seminário de Geopolítica",
       descricao: "Design & Development",
       imgUrl: madagascar,
+      link:"https://docs.google.com/presentation/d/1THzH8tVVm1UkpQdk84tm7omSe5Z90mRWKukesMZCB5M/edit?usp=sharing",
     },
     {
       titulo: "Alemanha durante a 2ª Revolução Industrial",
       descricao: "Design & Development",
       imgUrl: revolucao,
+      link:"https://docs.google.com/document/d/1y1sZmj3dg7PHWBiSUa3IHYmbugh0LvlfVPI5kr9ZEq4/edit?usp=sharing",
     },
     {
       titulo: "Reflexão sobre o filme 1917",
       descricao: "Design & Development",
       imgUrl: filme1917,
+      link:"https://docs.google.com/document/d/1rwCawYgAyCTfkZZ_Wf49aXpAkJo6ImmbpUcvSPVUOWo/edit?usp=sharing",
     },
   ];
 
@@ -76,11 +83,13 @@ export const Materias = () => {
       titulo: "Trabalho Past Simple",
       descricao: "Design & Development",
       imgUrl: past,
+      link:"https://www.canva.com/design/DAGBc6Vi5g4/rxsviAFfcENucNnjdR3WGQ/edit?utm_content=DAGBc6Vi5g4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
       titulo: "Projeto Modernismo",
       descricao: "Design & Development",
       imgUrl: modernismo,
+      link:"https://www.canva.com/design/DAF-EkmY-c4/OW1eq109kQYn2kBYeSLZlg/edit?utm_content=DAF-EkmY-c4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
   ]
 
