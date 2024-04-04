@@ -4,6 +4,7 @@ import { TecnicoCards } from './teccards'
 import calculadora from '../images/calculadora.png'
 import livro from '../images/livro.png'
 import diagrama from '../images/diagrama.png'
+import implantacao from '../images/implantacao.png'
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -25,7 +26,12 @@ export const Tecnico = () => {
   ];
 
   const implantação = [
-
+    {
+      titulo: "Implantação de Sistemas",
+      descricao: "Design & Development",
+      imgUrl: implantacao,
+      trimestre: "primeiro"
+    },
   ];
 
   const modelagem = [
