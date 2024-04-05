@@ -15,13 +15,15 @@ export const Tecnico = () => {
       titulo: "Calculadora de Horas",
       descricao: "Design & Development",
       imgUrl: calculadora,
-      trimestre: "primeiro"
+      trimestre: "primeiro",
+      link:"https://github.com/Matheus-S-Cruz/Calculadora-De-Horas",
     },
     {
       titulo: "Cadastro de Livros",
       descricao: "Design & Development",
       imgUrl: livro,
-      trimestre: "primeiro"
+      trimestre: "primeiro",
+      link:"https://docs.google.com/document/d/1LE6E-uvqf4VeHA8oONslJVQWD8XI4BADHmW3oBrvk_E/edit?usp=sharing",
     },
   ];
 
@@ -30,7 +32,8 @@ export const Tecnico = () => {
       titulo: "Implantação de Sistemas",
       descricao: "Design & Development",
       imgUrl: implantacao,
-      trimestre: "primeiro"
+      trimestre: "primeiro",
+      link:"https://docs.google.com/spreadsheets/d/1s7CjzyajRil_DIJ7Vb_pDFbP7tmqHyI91xOadTypNW8/edit?usp=sharing",
     },
   ];
 
