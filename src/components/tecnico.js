@@ -13,24 +13,27 @@ export const Tecnico = () => {
   const desenvolvimento = [
     {
       titulo: "Calculadora de Horas",
-      descricao: "Design & Development",
+      descricao: "Calculadora de Horas programada. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: calculadora,
       trimestre: "primeiro",
       link:"https://github.com/Matheus-S-Cruz/Calculadora-De-Horas",
     },
     {
       titulo: "Cadastro de Livros",
-      descricao: "Design & Development",
+      descricao: "API com SpringBoot. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: livro,
       trimestre: "primeiro",
-      link:"https://docs.google.com/document/d/1LE6E-uvqf4VeHA8oONslJVQWD8XI4BADHmW3oBrvk_E/edit?usp=sharing",
+      link:"https://docs.google.com/document/d/1kNYXvBqI5UG5ESheDR-8i--RrXXFbfvZ6WpvuiZ96l8/edit?usp=sharing",
     },
   ];
 
   const implantação = [
     {
       titulo: "Implantação de Sistemas",
-      descricao: "Design & Development",
+      descricao: "Projeto de Implantação de Software com Wrike. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: implantacao,
       trimestre: "primeiro",
       link:"https://docs.google.com/spreadsheets/d/1s7CjzyajRil_DIJ7Vb_pDFbP7tmqHyI91xOadTypNW8/edit?usp=sharing",
@@ -40,9 +43,11 @@ export const Tecnico = () => {
   const modelagem = [
     {
       titulo: "Diagrama Casos de Uso",
-      descricao: "Design & Development",
+      descricao: "Diagrama de Casos de Uso da SA. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: diagrama,
-      trimestre: "primeiro"
+      trimestre: "primeiro",
+      link:"https://docs.google.com/document/d/1tpwqw4gZqRbBlWCwBww9a8dNlh7ycf5K-P-KOqtE_D0/edit?usp=sharing"
     },
   ];
 

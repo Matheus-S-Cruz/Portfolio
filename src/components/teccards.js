@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const TecnicoCards = ({ titulo, descricao, imgUrl, link }) => {
+export const TecnicoCards = ({ titulo, descricao, imgUrl, link, mais }) => {
 
   const handleClick = () => {
     if (link) {
@@ -15,6 +15,7 @@ export const TecnicoCards = ({ titulo, descricao, imgUrl, link }) => {
         <div className="proj-txtx">
           <h4>{titulo}</h4>
           <span>{descricao}</span>
+          <span>{mais}</span>
         </div>
       </div>
     </Col>
