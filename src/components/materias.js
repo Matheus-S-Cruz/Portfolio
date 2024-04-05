@@ -18,32 +18,36 @@ export const Materias = () => {
   const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const natureza = [
-    {
-      titulo: "Meme Evolucionismo",
-      descricao: "Design & Development",
+    { 
+      titulo: "Atividade Beux",
+      descricao: "Meme Sobre Evolucionismo. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: memerev,
-      link: "https://www.canva.com/design/DAGBcsFb6xQ/MGrunB_UMZN4ImdhJzXvEg/edit?utm_content=DAGBcsFb6xQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      link: "https://docs.google.com/document/d/1ZAgosWZWtJuDwlkKT5hyofby8jV0Mt6GlLvWxPH-cm4/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Relatório Circuitos",
-      descricao: "Design & Development",
+      titulo: "Atividade Tai",
+      descricao: "Relatório Circuitos. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: circuitos,
       link:"https://docs.google.com/document/d/1sjghxCmo8yJ6Sbr6HtbTwanUJxYyZX_3rUkHxwr8lLw/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Bagulho lá de Orgânica",
-      descricao: "Design & Development",
+      titulo: "Atividade Marga",
+      descricao: "Apresentação Revisão de Orgânica. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: organica,
-      link:"https://www.canva.com/design/DAF9amqy1uM/OesdO4bOvoUixhsVtgE3zg/edit?utm_content=DAF9amqy1uM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      link:"https://docs.google.com/document/d/1JV9LMG3lZmch0DwXH83e1sh2056OdOTn3N6FAAUE9W4/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Pesquisa Genética",
-      descricao: "Design & Development",
+      titulo: "Atividade de Autoria",
+      descricao: "Pesquisa Genética. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: genetica,
-      link:"https://docs.google.com/document/d/179xiU96jbA58T24E3e_xVC18_JYpR0wqVXnSDNoal_s/edit?usp=sharing",  
+      link:"https://docs.google.com/document/d/1X57RT53pPuh1N_ciGeJIDRwTD5tjagHC90G9Ju9PZVA/edit?usp=sharing",  
       trimestre: "primeiro"
     },
   ];
@@ -51,7 +55,8 @@ export const Materias = () => {
   const matematica = [
     {
       titulo: "Arcos e Ângulos",
-      descricao: "Vídeo de Trigonometria",
+      descricao: "Vídeo de Trigonometria. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: trigonometria,
       link:"https://docs.google.com/document/d/1MSwtlMJp0ExTo8IkjVD7DXWbe0Nl75uTLelr6tSaGMQ/edit?usp=sharing",
       trimestre: "primeiro"
@@ -61,46 +66,53 @@ export const Materias = () => {
   const humanas = [
     {
       titulo: "Seminário de Geopolítica",
-      descricao: "Design & Development",
+      descricao: "Magascar Geopolítica. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: madagascar,
-      link:"https://docs.google.com/presentation/d/1THzH8tVVm1UkpQdk84tm7omSe5Z90mRWKukesMZCB5M/edit?usp=sharing",
+      link:"https://docs.google.com/document/d/1QF3lG7gZgbUNqcHCDSPF1ugaCy0tksOqWx0Kjz-sKNs/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Alemanha durante a 2ª Revolução Industrial",
-      descricao: "Design & Development",
+      titulo: "Tecnologias da 2º Revolução Industrial",
+      descricao: "Alemanha durante a 2ª Revolução Industrial. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: revolucao,
-      link:"https://docs.google.com/document/d/1y1sZmj3dg7PHWBiSUa3IHYmbugh0LvlfVPI5kr9ZEq4/edit?usp=sharing",
+      link:"https://docs.google.com/document/d/1UBPWDiXnfxgsGL2eAsj7Q9aUmWPbp7_t7EGW--0WwNM/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Reflexão sobre o filme 1917",
-      descricao: "Design & Development",
+      titulo: "Filme 1917",
+      descricao: "Filme 1917 - Análise. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: filme1917,
-      link:"https://docs.google.com/document/d/1rwCawYgAyCTfkZZ_Wf49aXpAkJo6ImmbpUcvSPVUOWo/edit?usp=sharing",
-      trimestre: "primeiro"
+      link:"https://docs.google.com/document/d/13MQW4uVOygzYk50WGQmpHJT48-hzjmLC-WZvjx3lsuk/edit?usp=sharing",
+      trimestre: "primeiro",
     },
   ];
 
   const linguagens = [
     {
       titulo: "Revista Literária",
-      descricao: "Design & Development",
+      descricao: "Projeto de Revista Literária. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: revista,
+      link:"https://docs.google.com/document/d/1tWFwEhayxTxanb8vQWTysAUnqCDVH3lj11aNxayKjgQ/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
       titulo: "Trabalho Past Simple",
-      descricao: "Design & Development",
+      descricao: "Post miniconto em inglês. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: past,
-      link:"https://www.canva.com/design/DAGBc6Vi5g4/rxsviAFfcENucNnjdR3WGQ/edit?utm_content=DAGBc6Vi5g4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      link:"https://docs.google.com/document/d/1DeyK8tUtdaoCqo6MRo6vI-hY-lbHzRyi6Sv5sbkNCvc/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Projeto Modernismo",
-      descricao: "Design & Development",
+      titulo: "Atividade Pré-modernismo",
+      descricao: "Pré Modernismo. ",
+      mais:"Clique para ver mais sobre a atividade",
       imgUrl: modernismo,
-      link:"https://www.canva.com/design/DAF-EkmY-c4/OW1eq109kQYn2kBYeSLZlg/edit?utm_content=DAF-EkmY-c4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      link:"https://docs.google.com/document/d/1NbeOnRcU_mfCalkyviW4PC0aAwUjiRA7ya89RW2Q0OY/edit?usp=sharing",
       trimestre: "primeiro"
     },
   ]
