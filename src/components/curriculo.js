@@ -18,7 +18,6 @@ export const Curriculo = () =>{
             <h2>Meu Currículo</h2>
             <br/>
             <img ref={imageRef} src={curriculo} alt="Currículo" className='curriculo'/>
-            <br/>
             <img src={download} onClick={handleDownload} className='download'></img>
             </div>
     )
