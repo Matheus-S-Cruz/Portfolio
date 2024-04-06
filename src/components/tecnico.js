@@ -13,7 +13,7 @@ export const Tecnico = () => {
   const desenvolvimento = [
     {
       titulo: "Calculadora de Horas",
-      descricao: "Calculadora de Horas programada. ",
+      descricao: "Nessa atividade foi desenvolvida uma calculadora de horas em ReactJS, foi o meu primeiro contato com a linguagem, onde pude aprender sobre componentes, props, states e hooks. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: calculadora,
       trimestre: "primeiro",
@@ -21,7 +21,7 @@ export const Tecnico = () => {
     },
     {
       titulo: "Cadastro de Livros",
-      descricao: "API com SpringBoot. ",
+      descricao: "Nessa atividade utilizamos uma API com SpringBoot para fazer um sistema de cadastro de livros, onde aprendi sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: livro,
       trimestre: "primeiro",
@@ -32,7 +32,7 @@ export const Tecnico = () => {
   const implantação = [
     {
       titulo: "Implantação de Sistemas",
-      descricao: "Projeto de Implantação de Software com Wrike. ",
+      descricao: "Nessa aula nós fizemos um projeto de Implantação de Software com Wrike. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: implantacao,
       trimestre: "primeiro",
@@ -43,7 +43,7 @@ export const Tecnico = () => {
   const modelagem = [
     {
       titulo: "Diagrama Casos de Uso",
-      descricao: "Diagrama de Casos de Uso da SA. ",
+      descricao: "Nessa atividade fizemos um Diagrama de Casos de Uso para a SA. O diagrama foi feito no Lucidchart. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: diagrama,
       trimestre: "primeiro",
