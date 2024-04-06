@@ -19,8 +19,8 @@ export const Materias = () => {
 
   const natureza = [
     { 
-      titulo: "Atividade Beux",
-      descricao: "Meme Sobre Evolucionismo. ",
+      titulo: "Meme Sobre Evolucionismo",
+      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre a evolução das espécies e sobre os principais cientistas que contribuiram para esse estudo. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: memerev,
       link: "https://docs.google.com/document/d/1ZAgosWZWtJuDwlkKT5hyofby8jV0Mt6GlLvWxPH-cm4/edit?usp=sharing",
