@@ -27,16 +27,16 @@ export const Materias = () => {
       trimestre: "primeiro"
     },
     {
-      titulo: "Atividade Tai",
-      descricao: "Relatório Circuitos. ",
+      titulo: "Relatório Circuitos",
+      descricao: "O objetivo desta atividade prática é permitir que os alunos compreendam e experimentem as diferenças entre circuitos de resistores em série e em paralelo, explorando como a resistência total é afetada em cada configuração. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: circuitos,
       link:"https://docs.google.com/document/d/1sjghxCmo8yJ6Sbr6HtbTwanUJxYyZX_3rUkHxwr8lLw/edit?usp=sharing",
       trimestre: "primeiro"
     },
     {
-      titulo: "Atividade Marga",
-      descricao: "Apresentação Revisão de Orgânica. ",
+      titulo: "Apresentação Revisão de Orgânica",
+      descricao: "Nesta atividade relembramos o conhecimento de conteúdos de química orgânica através de uma apresentação sobre o tema. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: organica,
       link:"https://docs.google.com/document/d/1JV9LMG3lZmch0DwXH83e1sh2056OdOTn3N6FAAUE9W4/edit?usp=sharing",
@@ -55,7 +55,7 @@ export const Materias = () => {
   const matematica = [
     {
       titulo: "Arcos e Ângulos",
-      descricao: "Vídeo de Trigonometria. ",
+      descricao: "Nesta atividade nosso objetivo foi produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Ângulos com todas as instruções e demais elementos necessários. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: trigonometria,
       link:"https://docs.google.com/document/d/1MSwtlMJp0ExTo8IkjVD7DXWbe0Nl75uTLelr6tSaGMQ/edit?usp=sharing",
@@ -66,7 +66,7 @@ export const Materias = () => {
   const humanas = [
     {
       titulo: "Seminário de Geopolítica",
-      descricao: "Magascar Geopolítica. ",
+      descricao: "O intuito do projeto foi iniciar os estudos de geopolítica de uma forma descontraída, com o objetivo de apresentar um país e suas características. O nosso país escolhido foi Madagascar.",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: madagascar,
       link:"https://docs.google.com/document/d/1QF3lG7gZgbUNqcHCDSPF1ugaCy0tksOqWx0Kjz-sKNs/edit?usp=sharing",
@@ -74,7 +74,7 @@ export const Materias = () => {
     },
     {
       titulo: "Tecnologias da 2º Revolução Industrial",
-      descricao: "Alemanha durante a 2ª Revolução Industrial. ",
+      descricao: "Nessa atividade era necessário realizar a busca de informações em como as tecnologias da 2º Revolução Industrial impactaram a sociedade da época em um determinado país e como essas tecnologias são utilizadas atualmente. O país escolhido foi a Alemanha.",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: revolucao,
       link:"https://docs.google.com/document/d/1UBPWDiXnfxgsGL2eAsj7Q9aUmWPbp7_t7EGW--0WwNM/edit?usp=sharing",
@@ -82,7 +82,7 @@ export const Materias = () => {
     },
     {
       titulo: "Filme 1917",
-      descricao: "Filme 1917 - Análise. ",
+      descricao: "Nessa aula nós assistimos o filme 1917 e fizemos uma análise sobre o mesmo. Foi uma atividade muito interessante e que nos proporcionou uma visão diferente sobre a Primeira Guerra Mundial.",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: filme1917,
       link:"https://docs.google.com/document/d/13MQW4uVOygzYk50WGQmpHJT48-hzjmLC-WZvjx3lsuk/edit?usp=sharing",
@@ -93,7 +93,7 @@ export const Materias = () => {
   const linguagens = [
     {
       titulo: "Revista Literária",
-      descricao: "Projeto de Revista Literária. ",
+      descricao: "O Projeto de Revista Literária ainda não foi concluído, vamos atualizá-lo em breve. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: revista,
       link:"https://docs.google.com/document/d/1tWFwEhayxTxanb8vQWTysAUnqCDVH3lj11aNxayKjgQ/edit?usp=sharing",
@@ -101,7 +101,7 @@ export const Materias = () => {
     },
     {
       titulo: "Trabalho Past Simple",
-      descricao: "Post miniconto em inglês. ",
+      descricao: "Nessa atividade precisavamos fazer uma simulação de um Post miniconto em inglês baseado na foto que recebos. Nós fizemos o trabalho sobre o nosso personagem FreedomRider, um homem em cadeira de rodas que viajou o mundo para encontrar uma paisagem linda.",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: past,
       link:"https://docs.google.com/document/d/1DeyK8tUtdaoCqo6MRo6vI-hY-lbHzRyi6Sv5sbkNCvc/edit?usp=sharing",
@@ -109,7 +109,7 @@ export const Materias = () => {
     },
     {
       titulo: "Atividade Pré-modernismo",
-      descricao: "Pré Modernismo. ",
+      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre o Pré-modernismo e suas características, então escolhemos um conto de Euclide da Cunha, OS Sertões, para analisar e entender melhor o movimento literário e como era a época que ele passava. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: modernismo,
       link:"https://docs.google.com/document/d/1NbeOnRcU_mfCalkyviW4PC0aAwUjiRA7ya89RW2Q0OY/edit?usp=sharing",
