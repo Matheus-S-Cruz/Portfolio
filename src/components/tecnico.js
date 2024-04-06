@@ -17,7 +17,7 @@ export const Tecnico = () => {
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: calculadora,
       trimestre: "primeiro",
-      link:"https://github.com/Matheus-S-Cruz/Calculadora-De-Horas",
+      link:"https://github.com/Matheus-S-Cruz/CalcHorasReact/",
     },
     {
       titulo: "Cadastro de Livros",
