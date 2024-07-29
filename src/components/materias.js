@@ -88,6 +88,22 @@ export const Materias = () => {
       link:"https://docs.google.com/document/d/13MQW4uVOygzYk50WGQmpHJT48-hzjmLC-WZvjx3lsuk/edit?usp=sharing",
       trimestre: "primeiro",
     },
+    {
+      titulo: "Crises Econômicas",
+      descricao: "Nessa atividade era necessário realizar a busca de informações em como as tecnologias da 2º Revolução Industrial impactaram a sociedade da época em um determinado país e como essas tecnologias são utilizadas atualmente. O país escolhido foi a Alemanha.",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: revolucao,
+      link:"https://docs.google.com/document/d/1VRbJoFD6udj6SWvVQDRFi35VaJ3G91dG32VkyLOyi-4/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "História de Anna Amélia",
+      descricao: "Nessa aula nós assistimos o filme 1917 e fizemos uma análise sobre o mesmo. Foi uma atividade muito interessante e que nos proporcionou uma visão diferente sobre a Primeira Guerra Mundial.",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: filme1917,
+      link:"https://docs.google.com/document/d/1kLGXOK4Y_DukgFhUWszDNYc5AtuHH69dINPNTjFaja8/edit?usp=sharing",
+      trimestre: "segundo",
+    },
   ];
 
   const linguagens = [
