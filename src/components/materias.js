@@ -12,6 +12,7 @@ import filme1917 from '../images/filme1917.png'
 import revista from '../images/revista.png'
 import past from '../images/past.png'
 import modernismo from '../images/modernismo.png'
+import redacao from '../images/redacao.png'
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -146,6 +147,14 @@ export const Materias = () => {
       imgUrl: modernismo,
       link:"https://docs.google.com/document/d/1NbeOnRcU_mfCalkyviW4PC0aAwUjiRA7ya89RW2Q0OY/edit?usp=sharing",
       trimestre: "primeiro"
+    },
+    {
+      titulo: "Redação Online",
+      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre o Pré-modernismo e suas características, então escolhemos um conto de Euclide da Cunha, OS Sertões, para analisar e entender melhor o movimento literário e como era a época que ele passava. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: redacao,
+      link:"https://docs.google.com/document/d/1OIKyoUxgrMYb-HqZmZMOhMcY_-rFrf9U7wpa3_3qzsI/edit?usp=sharing",
+      trimestre: "segundo"
     },
   ]
 
