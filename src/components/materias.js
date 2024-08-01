@@ -61,6 +61,22 @@ export const Materias = () => {
       link:"https://docs.google.com/document/d/1MSwtlMJp0ExTo8IkjVD7DXWbe0Nl75uTLelr6tSaGMQ/edit?usp=sharing",
       trimestre: "primeiro"
     },
+    {
+      titulo: "Filme Quebrando a Banca",
+      descricao: "Nesta atividade nosso objetivo foi produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Ângulos com todas as instruções e demais elementos necessários. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: trigonometria,
+      link:"https://docs.google.com/document/d/1HyQAysPajJ-0Yjk71QgKzRuT-nL5_uMeM8kc2uxpuqc/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Arcos e Ângulos",
+      descricao: "Nesta atividade nosso objetivo foi produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Ângulos com todas as instruções e demais elementos necessários. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: trigonometria,
+      link:"https://docs.google.com/document/d/1PpHyNXU31IR4bwBE2LGAHMYCuIiyaqHRzIFGSzXR5zA/edit?usp=sharing",
+      trimestre: "segundo"
+    },
   ];
 
   const humanas = [
