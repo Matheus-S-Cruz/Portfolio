@@ -286,15 +286,15 @@ body{
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
+
 .project{
+  padding: 90px 0;
   position: relative;
-  padding: 40px 0;
-  margin: 0 auto; /* Centraliza horizontalmente */
-  max-width: 1200px; /* Largura máxima */
+  width: 100%;
 }
 
 .project h2{
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
@@ -322,7 +322,7 @@ body{
 }
 
 .project .nav.nav-pills .nav-link{
-  background-color:#183d4e;
+  background-color:#225e1c;
   border-radius: 4;
   padding: 20px ;
   color: #ffffff;
@@ -349,8 +349,6 @@ body{
 
 .project .nav.nav-pills .nav-link.active::before{
   width: 100% !important;
-
-
 }
 
 .project .nav.nav-pills .nav-link.active{
@@ -359,7 +357,6 @@ body{
   letter-spacing: 7px;
   background-color: #91AA9D; /* Alterar a cor de fundo ativa */
   border-color: #91AA9D; /* Alterar a cor da borda ativa */
-
 }
 
 .nav-link#projects-tabs-tab-natureza{
@@ -371,10 +368,12 @@ body{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .nav-link#projects-tabs-tab-humanas{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .nav-link#projects-tabs-tab-linguagens{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -384,16 +383,14 @@ body{
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
-  width: auto;
-  height: auto;
-  max-height: 400px;
-  max-width: 400px;
+  width: 54%;
+  height: 70%;
+  margin: auto;  
 }
 
 .proj-imgbx::before{
   content: "";
-  background: linear-gradient(#193441, #3E606F, #587581);
+  background: linear-gradient(#264119, #3e6f3e, #58815b);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -414,7 +411,6 @@ body{
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-
 }
 
 .proj-imgbx:hover .proj-txtx{
@@ -435,10 +431,10 @@ body{
   font-weight: 400;
   font-size: 15px;
 }
+
 .tecnico{
+  padding: 90px 0;
   position: relative;
-  padding: 40px 0;
-  margin-left: 0 auto;
 }
 
 .tecnico h2{
@@ -470,7 +466,7 @@ body{
 }
 
 .tecnico .nav.nav-pills .nav-link{
-  background-color:#183d4e;
+  background-color:#225e1c;
   border-radius: 4;
   padding: 20px ;
   color: #ffffff;
@@ -497,8 +493,6 @@ body{
 
 .tecnico .nav.nav-pills .nav-link.active::before{
   width: 20% !important;
-
-
 }
 
 .tecnico .nav.nav-pills .nav-link.active{
