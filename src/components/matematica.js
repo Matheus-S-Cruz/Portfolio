@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Linguagens = () => {
+export const Matematica = () => {
     return (
         <div>
 
