@@ -150,10 +150,26 @@ export const Materias = () => {
     },
     {
       titulo: "Redação Online",
-      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre o Pré-modernismo e suas características, então escolhemos um conto de Euclide da Cunha, OS Sertões, para analisar e entender melhor o movimento literário e como era a época que ele passava. ",
+      descricao: "Durante esse dia, fizemos uma redação baseada no modelo ENEM, para realizar avaliações da capacidade dos alunos, possibilitando uma revisão mais fácil para a professora, que pode focar em ensinar os pontos fracos dos estudantes. ",
       mais:"Clique para ver mais sobre a atividade",
       imgUrl: redacao,
       link:"https://docs.google.com/document/d/1OIKyoUxgrMYb-HqZmZMOhMcY_-rFrf9U7wpa3_3qzsI/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Maquete Quartinho",
+      descricao: "Atividade ainda não finalizada. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: trigonometria,
+      link:"https://docs.google.com/document/d/1_sFCShpvb78ykG-yXjZmwAnd17pUHvDdx-Jc5YxSu0E/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Poema",
+      descricao: "Atividade ainda não finalizada. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: trigonometria,
+      link:"https://docs.google.com/document/d/11u3G1ak0wSJTcsru_prE350xCFaUkG5-emqC045eVnw/edit?usp=sharing",
       trimestre: "segundo"
     },
   ]
