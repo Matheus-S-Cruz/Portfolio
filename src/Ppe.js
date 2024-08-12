@@ -10,7 +10,6 @@ function Ppe() {
           <Natureza/>
           <br/>
           <Matematica/>
-          <br/>
         </div>
       );
 }
