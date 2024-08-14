@@ -1,10 +1,12 @@
-export const PPE = () =>{
+import { Link } from "react-router-dom";
+import React from "react";
 
-    return(
-        <div className="PPE" id="PPE">
-             <h3>PPE</h3>
-             <p>O PPE ainda está em construção, espere mais um pouco.</p>
-             <a href=""><button className="ppe">PPE</button></a> 
-        </div>
-    )
+export const PPE = () => {
+  return (
+    <div className="PPE" id="PPE">
+      <h3>PPE</h3>
+      <p>Clique aqui para ser redirecionado para o PPE.</p>
+      <button className="ppe"><Link to="/ppe">PPE</Link></button>
+    </div>
+  );
 }
