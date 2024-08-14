@@ -6,7 +6,7 @@ export const PPE = () => {
     <div className="PPE" id="PPE">
       <h3>PPE</h3>
       <p>Clique aqui para ser redirecionado para o PPE.</p>
-      <button className="ppe"><Link to="/ppe">PPE</Link></button>
+      <Link to="/ppe"><button className="ppe">PPE</button></Link>
     </div>
   );
 }

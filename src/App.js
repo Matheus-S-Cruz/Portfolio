@@ -22,22 +22,26 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<NavBar />} />
+      <Route path="/" element={
+          <>
+            <NavBar />
+            <Home />
+            <br />
+            <Skills />
+            <br />
+            <Curriculo />
+            <br />
+            <Materias />
+            <Cards />
+            <Tecnico />
+            <TecnicoCards />
+            <PPE />
+            <br />
+            <Portfolios />
+          </>
+        } />
         <Route path="ppe" element={<Ppe />} />
       </Routes>
-      <Home />
-      <br />
-      <Skills />
-      <br />
-      <Curriculo />
-      <br />
-      <Materias />
-      <Cards />
-      <Tecnico />
-      <TecnicoCards />
-      <PPE />
-      <br />
-      <Portfolios />
     </div>
   );
 }

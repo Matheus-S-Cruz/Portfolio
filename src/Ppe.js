@@ -15,7 +15,7 @@ function Ppe() {
       <Natureza />
       <br />
       <Matematica />
-      <Link to="/">Voltar</Link>
+      <Link to="/"><button className="ppe">Voltar</button></Link>
     </div>
   );
 }
