@@ -51,6 +51,38 @@ export const Materias = () => {
       link:"https://docs.google.com/document/d/1X57RT53pPuh1N_ciGeJIDRwTD5tjagHC90G9Ju9PZVA/edit?usp=sharing",  
       trimestre: "primeiro"
     },
+    { 
+      titulo: "Revista Eletrônica",
+      descricao: ".",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: memerev,
+      link: "https://docs.google.com/document/d/1e-JP8UYoA_Ab2_mtc3143ejoo9txk9fHjUvMHDYNFNQ/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Circuitos Elétricos",
+      descricao: ".",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: circuitos,
+      link:"https://docs.google.com/document/d/1lVfmCjL84-tMiMRYvMR9pTNrU0PRPKfr6IQq5Iz4Zrs/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Uso de Plástico",
+      descricao: "Nesta atividade relembramos o conhecimento de conteúdos de química orgânica através de uma apresentação sobre o tema. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: organica,
+      link:"https://docs.google.com/document/d/1cO36r-K9R8h61_5Cmc4FvTqFh-ZX-dEfoKPCYftiqhw/edit?usp=sharing",
+      trimestre: "segundo"
+    },
+    {
+      titulo: "Atividade de Autoria",
+      descricao: "Linha do Tempo Magnetismo. ",
+      mais:"Clique para ver mais sobre a atividade",
+      imgUrl: genetica,
+      link:"https://docs.google.com/document/d/1UyLcm6HxdrbEFv00-UuG1w4y7KO6OnPU_WJHm-ySmoM/edit?usp=sharing",  
+      trimestre: "segundo"
+    },
   ];
 
   const matematica = [
