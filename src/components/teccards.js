@@ -11,7 +11,7 @@ export const TecnicoCards = ({ titulo, descricao, imgUrl, link, mais }) => {
   return (
     <Col size={12} sm={6} md={5}>
       <div className="proj-imgbx" onClick={handleClick} style={{ cursor: 'pointer' }}>
-        <img src={imgUrl}/>
+        <img src={imgUrl} style={{ width: '100%', height: 'auto', objectFit: 'cover' }} />
         <div className="proj-txtx">
           <h4>{titulo}</h4>
           <span>{descricao}</span>

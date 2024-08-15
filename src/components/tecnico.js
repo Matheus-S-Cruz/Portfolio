@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { TecnicoCards } from './teccards'
-import calculadora from '../images/calculadora.png'
-import livro from '../images/livro.png'
-import diagrama from '../images/diagrama.png'
-import implantacao from '../images/implantacao.png'
+import { TecnicoCards } from "./teccards";
+import calculadora from "../images/calculadora.png";
+import livro from "../images/livro.png";
+import diagrama from "../images/diagrama.png";
+import implantacao from "../images/implantacao.png";
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -13,41 +13,45 @@ export const Tecnico = () => {
   const desenvolvimento = [
     {
       titulo: "Calculadora de Horas",
-      descricao: "Nessa atividade foi desenvolvida uma calculadora de horas em ReactJS, foi o meu primeiro contato com a linguagem, onde pude aprender sobre componentes, props, states e hooks. ",
-      mais:"Clique para ver mais sobre a atividade",
+      descricao:
+        "Nessa atividade foi desenvolvida uma calculadora de horas em ReactJS, foi o meu primeiro contato com a linguagem, onde pude aprender sobre componentes, props, states e hooks. ",
+      mais: "Clique para ver mais sobre a atividade",
       imgUrl: calculadora,
       trimestre: "primeiro",
-      link:"https://github.com/Matheus-S-Cruz/CalcHorasReact/",
+      link: "https://github.com/Matheus-S-Cruz/CalcHorasReact/",
     },
     {
       titulo: "Cadastro de Livros",
-      descricao: "Nessa atividade utilizamos uma API com SpringBoot para fazer um sistema de cadastro de livros, onde aprendi sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
-      mais:"Clique para ver mais sobre a atividade",
+      descricao:
+        "Nessa atividade utilizamos uma API com SpringBoot para fazer um sistema de cadastro de livros, onde aprendi sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
+      mais: "Clique para ver mais sobre a atividade",
       imgUrl: livro,
       trimestre: "primeiro",
-      link:"https://docs.google.com/document/d/1kNYXvBqI5UG5ESheDR-8i--RrXXFbfvZ6WpvuiZ96l8/edit?usp=sharing",
+      link: "https://docs.google.com/document/d/1kNYXvBqI5UG5ESheDR-8i--RrXXFbfvZ6WpvuiZ96l8/edit?usp=sharing",
     },
   ];
 
   const implantação = [
     {
       titulo: "Implantação de Sistemas",
-      descricao: "Nessa aula nós fizemos um projeto de Implantação de Software com Wrike. ",
-      mais:"Clique para ver mais sobre a atividade",
+      descricao:
+        "Nessa aula nós fizemos um projeto de Implantação de Software com Wrike. ",
+      mais: "Clique para ver mais sobre a atividade",
       imgUrl: implantacao,
       trimestre: "primeiro",
-      link:"https://docs.google.com/spreadsheets/d/1s7CjzyajRil_DIJ7Vb_pDFbP7tmqHyI91xOadTypNW8/edit?usp=sharing",
+      link: "https://docs.google.com/spreadsheets/d/1s7CjzyajRil_DIJ7Vb_pDFbP7tmqHyI91xOadTypNW8/edit?usp=sharing",
     },
   ];
 
   const modelagem = [
     {
       titulo: "Diagrama Casos de Uso",
-      descricao: "Nessa atividade fizemos um Diagrama de Casos de Uso para a SA. O diagrama foi feito no Lucidchart. ",
-      mais:"Clique para ver mais sobre a atividade",
+      descricao:
+        "Nessa atividade fizemos um Diagrama de Casos de Uso para a SA. O diagrama foi feito no Lucidchart. ",
+      mais: "Clique para ver mais sobre a atividade",
       imgUrl: diagrama,
       trimestre: "primeiro",
-      link:"https://docs.google.com/document/d/1tpwqw4gZqRbBlWCwBww9a8dNlh7ycf5K-P-KOqtE_D0/edit?usp=sharing"
+      link: "https://docs.google.com/document/d/1tpwqw4gZqRbBlWCwBww9a8dNlh7ycf5K-P-KOqtE_D0/edit?usp=sharing",
     },
   ];
 
@@ -57,51 +61,95 @@ export const Tecnico = () => {
         <Row>
           <Col>
             <h2 id="tecnico">Projetos do Técnico</h2>
-            <button className="trimestre" onClick={() => setSelectedTrimestre("primeiro")}>
-            <span>1º Trimestre</span>
-            <div class="border full-rounded"></div></button>
-            <button className="trimestre" onClick={() => setSelectedTrimestre("segundo")}>
-            <span>2º Trimestre</span>
-            <div class="border full-rounded"></div></button>
-            <button className="trimestre" onClick={() => setSelectedTrimestre("terceiro")}>
-            <span>3º Trimestre</span>
-            <div class="border full-rounded"></div></button>
-            <Tab.Container id="tecnicos-tabs" activeKey={selectedCategory} onSelect={(key) => setSelectedCategory(key)}>
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+            <button
+              className="trimestre"
+              onClick={() => setSelectedTrimestre("primeiro")}
+            >
+              <span>1º Trimestre</span>
+              <div class="border full-rounded"></div>
+            </button>
+            <button
+              className="trimestre"
+              onClick={() => setSelectedTrimestre("segundo")}
+            >
+              <span>2º Trimestre</span>
+              <div class="border full-rounded"></div>
+            </button>
+            <button
+              className="trimestre"
+              onClick={() => setSelectedTrimestre("terceiro")}
+            >
+              <span>3º Trimestre</span>
+              <div class="border full-rounded"></div>
+            </button>
+            <Tab.Container
+              id="tecnicos-tabs"
+              activeKey={selectedCategory}
+              onSelect={(key) => setSelectedCategory(key)}
+            >
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
                 <Nav.Item>
-                  <Nav.Link eventKey="desenvolvimento">Desenvolvimento De Sistemas</Nav.Link>
+                  <Nav.Link eventKey="desenvolvimento">
+                    Desenvolvimento De Sistemas
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="implantação">Implantação de Software</Nav.Link>
+                  <Nav.Link eventKey="implantação">
+                    Implantação de Software
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="modelagem">Modelagem de Sistemas</Nav.Link>
+                  <Nav.Link eventKey="modelagem">
+                    Modelagem de Sistemas
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
-              <Tab.Content>
+              <Tab.Content className="tecnico-content">
                 <Tab.Pane eventKey="desenvolvimento">
+                  <div className="tecnico-wrapper">
                   <Row>
                     {selectedCategory === "desenvolvimento" &&
-                      desenvolvimento.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
-                        <TecnicoCards key={index} {...projeto} />
-                      ))}
+                      desenvolvimento
+                        .filter(
+                          (projeto) => projeto.trimestre === selectedTrimestre
+                        )
+                        .map((projeto, index) => (
+                          <TecnicoCards key={index} {...projeto} />
+                        ))}
                   </Row>
+                  </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="implantação">
+                  <div className="tecnico-wrapper">
                   <Row>
                     {selectedCategory === "implantação" &&
-                      implantação.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
-                        <TecnicoCards key={index} {...projeto} />
-                      ))}
+                      implantação
+                        .filter(
+                          (projeto) => projeto.trimestre === selectedTrimestre
+                        )
+                        .map((projeto, index) => (
+                          <TecnicoCards key={index} {...projeto} />
+                        ))}
                   </Row>
+                  </div>
                 </Tab.Pane>
                 <Tab.Pane eventKey="modelagem">
+                <div className="tecnico-wrapper">
                   <Row>
                     {selectedCategory === "modelagem" &&
-                      modelagem.filter(projeto => projeto.trimestre === selectedTrimestre).map((projeto, index) => (
-                        <TecnicoCards key={index} {...projeto} />
-                      ))}
+                      modelagem
+                        .filter(
+                          (projeto) => projeto.trimestre === selectedTrimestre
+                        )
+                        .map((projeto, index) => (
+                          <TecnicoCards key={index} {...projeto} />
+                        ))}
                   </Row>
+                  </div>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

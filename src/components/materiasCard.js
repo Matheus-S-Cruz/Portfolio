@@ -10,8 +10,8 @@ export const Cards = ({ titulo, descricao, imgUrl, link, mais }) => {
 
   return (
     <Col size={12} sm={6} md={6}>
-      <div className="proj-imgbx" onClick={handleClick} style={{ cursor: 'pointer' }}>
-        <img src={imgUrl}/>
+      <div className="proj-imgbx" onClick={handleClick} style={{ cursor: 'pointer'}}>
+        <img src={imgUrl} style={{ width: '100%', objectFit: 'cover' }} />
         <div className="proj-txtx">
           <h4>{titulo}</h4>
           <span>{descricao}</span>
