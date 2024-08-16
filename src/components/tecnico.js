@@ -7,7 +7,7 @@ import diagrama from "../images/diagrama.png";
 import implantacao from "../images/implantacao.png";
 
 export const Tecnico = () => {
-  const [selectedCategory, setSelectedCategory] = useState("null");
+  const [selectedCategory, setSelectedCategory] = useState("desenvolvimento");
   const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const desenvolvimento = [

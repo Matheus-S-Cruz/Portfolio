@@ -19,7 +19,7 @@ import plastico from "../images/plastico.png";
 import magnetismo from "../images/magnetismo.png";
 
 export const Materias = () => {
-  const [selectedCategory, setSelectedCategory] = useState("null");
+  const [selectedCategory, setSelectedCategory] = useState("natureza");
   const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const natureza = [
