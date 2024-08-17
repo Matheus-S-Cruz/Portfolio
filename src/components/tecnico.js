@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { TecnicoCards } from "./teccards";
 import calculadora from "../images/calculadora.png";
 import livro from "../images/livro.png";
@@ -17,7 +16,7 @@ import biblio from "../images/biblio.png";
 import joomla from "../images/joomla.png";
 
 export const Tecnico = () => {
-  const [selectedCategory, setSelectedCategory] = useState("desenvolvimento");
+  const [selectedCategory, setSelectedCategory] = useState("null");
   const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const desenvolvimento = [
@@ -159,118 +158,112 @@ export const Tecnico = () => {
   ];
 
   return (
-    <section className="tecnico" id="tecnico">
-      <Container>
-        <Row>
-          <Col>
-            <h2 id="tecnico">Projetos do Técnico</h2>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("primeiro")}
-            >
-              <span>1º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("segundo")}
-            >
-              <span>2º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("terceiro")}
-            >
-              <span>3º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <Tab.Container
-              id="tecnicos-tabs"
-              activeKey={selectedCategory}
-              onSelect={(key) => setSelectedCategory(key)}
-            >
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="desenvolvimento">Desenvolvimento De Sistemas</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="implantação">Implantação de Software</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="modelagem">Modelagem de Sistemas</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="dados">Banco de Dados</Nav.Link>
-                </Nav.Item>
-              </Nav> 
-              <br />           
-              <Tab.Content className="tecnico-content">
-                <Tab.Pane eventKey="desenvolvimento">
-                  <div className="tecnico-wrapper">
-                  <Row>
-                    {selectedCategory === "desenvolvimento" &&
-                      desenvolvimento
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <TecnicoCards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="implantação">
-                  <div className="tecnico-wrapper">
-                  <Row>
-                    {selectedCategory === "implantação" &&
-                      implantação
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <TecnicoCards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="modelagem">
-                <div className="tecnico-wrapper">
-                  <Row>
-                    {selectedCategory === "modelagem" &&
-                      modelagem
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <TecnicoCards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                  </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="dados">
-                <div className="tecnico-wrapper">
-                  <Row>
-                    {selectedCategory === "dados" &&
-                      dados
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <TecnicoCards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                  </div>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
-          </Col>
-        </Row>
-      </Container>
+    <section className="py-16" id="tecnico">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-semibold">Projetos do Técnico</h2>
+        </div>
+
+        <div className="flex justify-center space-x-4 mb-8">
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "primeiro"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("primeiro")}
+          >
+            <span>1º Trimestre</span>
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "segundo"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("segundo")}
+          >
+            <span>2º Trimestre</span>
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "terceiro"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("terceiro")}
+          >
+            <span>3º Trimestre</span>
+          </button>
+        </div>
+
+        <div className="flex justify-center space-x-4 mb-8">
+          <button className={`px-4 py-2 rounded-full ${ selectedCategory === "desenvolvimento" 
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("desenvolvimento")}
+          >
+            Desenvolvimento De Sistemas
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "implantação"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("implantação")}
+          >
+            Implantação de Software
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "modelagem"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("modelagem")}
+          >
+            Modelagem de Sistemas
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "dados"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("dados")}
+          >
+            Banco de Dados
+          </button>
+        </div>
+        <div className="flex flex-wrap">
+          {selectedCategory === "desenvolvimento" &&
+            desenvolvimento
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+          {selectedCategory === "implantação" &&
+            implantação
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+          {selectedCategory === "modelagem" &&
+            modelagem
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+          {selectedCategory === "dados" &&
+            dados
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+        </div>
+      </div>
     </section>
   );
 };

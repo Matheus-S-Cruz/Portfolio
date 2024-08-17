@@ -1,4 +1,4 @@
-body{
+/* body{
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -19,8 +19,9 @@ body{
   display: grid;
   place-items: center;
   margin-top: 40px;
-}
-.typewriter{
+} */
+
+/* /* .typewriter{
   width: 27ch;
   animation: typing 2s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -28,15 +29,16 @@ body{
   border-right: 3px solid #04AA6D;
   font-family: monospace;
   font-size: 2em;
-}
+} */
 @keyframes typing {
   from { width: 0 }
 }
 @keyframes blink {
   50% {
     border-color: transparent}
-}
-.topnav {
+} */
+
+/* .topnav {
   width:100%;
 	height: 55px;
   overflow: hidden;
@@ -62,8 +64,9 @@ body{
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
-}
-.home{
+} */
+
+/* .home{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,12 +109,11 @@ body{
 }
 .download:hover{
   cursor:pointer
-}
-.skills {
+} */
+/* .skills {
   width: 410px;
   height: 254px;
   border-radius: 4px;
-  background: #333;
   display: flex;
   gap: 5px;
   padding: .4em;
@@ -125,7 +127,6 @@ body{
   cursor: pointer;
   border-radius: 2px;
   transition: all .5s;
-  background: #333;
   border: 1px solid #04AA6D;
   display: flex;
   justify-content: center;
@@ -149,7 +150,8 @@ body{
 
 .skills p:hover span {
   transform: rotate(0);
-}
+} */
+ 
 .portfolio{
   position: relative;
   padding: 10px 20px;
@@ -524,7 +526,6 @@ body{
   border: none;
   transition: all 0.1s linear;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
-  background-color: #333;
 }
 .trimestre:active{
   transform: scale(0.95);

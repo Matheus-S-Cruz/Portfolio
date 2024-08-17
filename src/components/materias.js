@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { Cards } from "./materiasCard";
 import memerev from "../images/memerev.png";
 import circuitos from "../images/circuitos.png";
@@ -23,7 +22,7 @@ import banca from "../images/banca.jpg";
 import banco from "../images/banco.png";
 
 export const Materias = () => {
-  const [selectedCategory, setSelectedCategory] = useState("natureza");
+  const [selectedCategory, setSelectedCategory] = useState("null");
   const [selectedTrimestre, setSelectedTrimestre] = useState("primeiro");
 
   const natureza = [
@@ -64,7 +63,8 @@ export const Materias = () => {
     },
     {
       titulo: "Relações Ecológicas",
-      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre as relações ecológicas entre os seres vivos. Nós fizemos uma revista sobre o tema. ",
+      descricao:
+        "Nesta atividade nós tivemos como objetivo aprender sobre as relações ecológicas entre os seres vivos. Nós fizemos uma revista sobre o tema. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: ecologia,
       link: "https://docs.google.com/document/d/1e-JP8UYoA_Ab2_mtc3143ejoo9txk9fHjUvMHDYNFNQ/edit?usp=sharing",
@@ -72,7 +72,8 @@ export const Materias = () => {
     },
     {
       titulo: "Circuitos Elétricos",
-      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre circuitos elétricos e suas características. A atividade foi realizar um mapa mental pelo Canva. ",
+      descricao:
+        "Nesta atividade nós tivemos como objetivo aprender sobre circuitos elétricos e suas características. A atividade foi realizar um mapa mental pelo Canva. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: mapamentalcircuito,
       link: "https://docs.google.com/document/d/1lVfmCjL84-tMiMRYvMR9pTNrU0PRPKfr6IQq5Iz4Zrs/edit?usp=sharing",
@@ -231,118 +232,128 @@ export const Materias = () => {
   ];
 
   return (
-    <section className="project" id="project">
-      <Container>
-        <Row>
-          <Col>
-            <h2 id="materias">Projetos das Matérias</h2>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("primeiro")}
-            >
-              <span>1º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("segundo")}
-            >
-              <span>2º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <button
-              className="trimestre"
-              onClick={() => setSelectedTrimestre("terceiro")}
-            >
-              <span>3º Trimestre</span>
-              <div class="border full-rounded"></div>
-            </button>
-            <Tab.Container
-              id="projects-tabs"
-              activeKey={selectedCategory}
-              onSelect={(key) => setSelectedCategory(key)}
-            >
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="natureza">Natureza</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="matematica">Matemática</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="humanas">Humanas</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="linguagens">Linguagens</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <br />
-              <Tab.Content className="materias-content">
-                <Tab.Pane eventKey="natureza">
-                <div className="materias-wrapper">
-                  <Row>
-                    {selectedCategory === "natureza" &&
-                      natureza
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <Cards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="matematica">
-                <div className="materias-wrapper">
-                  <Row>
-                    {selectedCategory === "matematica" &&
-                      matematica
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <Cards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="humanas">
-                <div className="materias-wrapper">
-                  <Row>
-                    {selectedCategory === "humanas" &&
-                      humanas
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <Cards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                </div>
-                </Tab.Pane>
-                <Tab.Pane eventKey="linguagens">
-                <div className="materias-wrapper">
-                  <Row>
-                    {selectedCategory === "linguagens" &&
-                      linguagens
-                        .filter(
-                          (projeto) => projeto.trimestre === selectedTrimestre
-                        )
-                        .map((projeto, index) => (
-                          <Cards key={index} {...projeto} />
-                        ))}
-                  </Row>
-                </div>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
-          </Col>
-        </Row>
-      </Container>
+    <section className="py-16" id="project">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 id="materias" className="text-4xl font-semibold">
+            Projetos das Matérias
+          </h2>
+        </div>
+        
+        <div className="flex justify-center space-x-4 mb-8">
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "primeiro"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("primeiro")}
+          >
+            <span>1º Trimestre</span>
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "segundo"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("segundo")}
+          >
+            <span>2º Trimestre</span>
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedTrimestre === "terceiro"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedTrimestre("terceiro")}
+          >
+            <span>3º Trimestre</span>
+          </button>
+        </div>
+
+        <div className="flex justify-center space-x-4 mb-8">
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "natureza"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("natureza")}
+          >
+            Natureza
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "matematica"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("matematica")}
+          >
+            Matemática
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "humanas"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("humanas")}
+          >
+            Humanas
+          </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "linguagens"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("linguagens")}
+          >
+            Linguagens
+          </button>
+        </div>
+        <div className="materias-content">
+          {selectedCategory === "natureza" && (
+            <div className="flex flex-wrap">
+              {natureza
+                .filter((projeto) => projeto.trimestre === selectedTrimestre)
+                .map((projeto, index) => (
+                  <Cards key={index} {...projeto} />
+                ))}
+            </div>
+          )}
+          {selectedCategory === "matematica" && (
+            <div className="flex flex-wrap">
+              {matematica
+                .filter((projeto) => projeto.trimestre === selectedTrimestre)
+                .map((projeto, index) => (
+                  <Cards key={index} {...projeto} />
+                ))}
+            </div>
+          )}
+          {selectedCategory === "humanas" && (
+            <div className="flex flex-wrap">
+              {humanas
+                .filter((projeto) => projeto.trimestre === selectedTrimestre)
+                .map((projeto, index) => (
+                  <Cards key={index} {...projeto} />
+                ))}
+            </div>
+          )}
+          {selectedCategory === "linguagens" && (
+            <div className="flex flex-wrap">
+              {linguagens
+                .filter((projeto) => projeto.trimestre === selectedTrimestre)
+                .map((projeto, index) => (
+                  <Cards key={index} {...projeto} />
+                ))}
+            </div>
+          )}
+        </div>
+      </div>
     </section>
   );
 };
