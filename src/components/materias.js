@@ -63,8 +63,8 @@ export const Materias = () => {
       trimestre: "primeiro",
     },
     {
-      titulo: "Revista Eletrônica",
-      descricao: ".",
+      titulo: "Relações Ecológicas",
+      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre as relações ecológicas entre os seres vivos. Nós fizemos uma revista sobre o tema. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: ecologia,
       link: "https://docs.google.com/document/d/1e-JP8UYoA_Ab2_mtc3143ejoo9txk9fHjUvMHDYNFNQ/edit?usp=sharing",
@@ -72,7 +72,7 @@ export const Materias = () => {
     },
     {
       titulo: "Circuitos Elétricos",
-      descricao: ".",
+      descricao: "Nesta atividade nós tivemos como objetivo aprender sobre circuitos elétricos e suas características. A atividade foi realizar um mapa mental pelo Canva. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: mapamentalcircuito,
       link: "https://docs.google.com/document/d/1lVfmCjL84-tMiMRYvMR9pTNrU0PRPKfr6IQq5Iz4Zrs/edit?usp=sharing",
@@ -81,7 +81,7 @@ export const Materias = () => {
     {
       titulo: "Uso de Plástico",
       descricao:
-        "Nesta atividade relembramos o conhecimento de conteúdos de química orgânica através de uma apresentação sobre o tema. ",
+        "Nesta atividade nós estudamos sobre o uso do plástico e suas consequências para o meio ambiente. Os alunos criaram cartazes para espalhar pela escola e promover a conscientização sobre o tema. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: plastico,
       link: "https://docs.google.com/document/d/1cO36r-K9R8h61_5Cmc4FvTqFh-ZX-dEfoKPCYftiqhw/edit?usp=sharing",
