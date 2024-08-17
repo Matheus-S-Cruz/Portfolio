@@ -303,13 +303,15 @@ body{
   max-width: 100%;
 }
 
-.project h2{
+.project h2,
+.tecnico h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
 
-.project p {
+.project p,
+.tecnico p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -327,34 +329,10 @@ body{
   width: 180vh;
 }
 
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255, 255, 255 / 10%);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.project .nav.nav-pills .nav-item{
+.project .nav.nav-pills .nav-item,
+.tecnico .nav.nav-pills .nav-item {
   width: 50%;
 }
-
-.project .nav.nav-pills .nav-link{
-  background-color:#225e1c;
-  border-radius: 4;
-  padding: 20px ;
-  color: #ffffff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  position: relative;
-  transition: 1s ease-in-out;
-  text-align: center;
-}
-
 
 .project .nav.nav-pills .nav-link::before{
   content: "";
@@ -371,12 +349,13 @@ body{
   width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active{
+.project .nav.nav-pills .nav-link.active,
+.tecnico .nav.nav-pills .nav-link.active {
   border: 1px solid rgb(8, 59, 117);
   background-color: #91AA9D;
   letter-spacing: 7px;
-  background-color: #91AA9D; /* Alterar a cor de fundo ativa */
-  border-color: #91AA9D; /* Alterar a cor da borda ativa */
+  background-color: #91AA9D;
+  border-color: #91AA9D;
 }
 
 .nav-link#projects-tabs-tab-natureza{
@@ -472,40 +451,26 @@ body{
 .tecnico{
   padding: 90px 0;
   position: relative;
+  width: 195vh;
+  max-width: 100%;
 }
 
-.tecnico h2{
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.tecnico p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 36%;
-}
-
+.project .nav.nav-pills,
 .tecnico .nav.nav-pills {
-  width: 62%;
+  width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255, 255, 255 / 10%);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.tecnico .nav.nav-pills .nav-item{
-  width: 50%;
-}
-
-.tecnico .nav.nav-pills .nav-link{
-  background-color:#225e1c;
-  border-radius: 4;
-  padding: 20px ;
+.project .nav.nav-pills .nav-link,
+.tecnico .nav.nav-pills .nav-link {
+  background-color: #225e1c;
+  border-radius: 4px;
+  padding: 20px;
   color: #ffffff;
   width: 100%;
   font-size: 17px;
@@ -529,16 +494,7 @@ body{
 }
 
 .tecnico .nav.nav-pills .nav-link.active::before{
-  width: 20% !important;
-}
-
-.tecnico .nav.nav-pills .nav-link.active{
-  border: 1px solid rgb(8, 59, 117);
-  background-color: #91AA9D;
-  letter-spacing: 7px;
-  background-color: #91AA9D; /* Alterar a cor de fundo ativa */
-  border-color: #91AA9D; /* Alterar a cor da borda ativa */
-
+  width: 100% !important;
 }
 
 .nav-link#tecnicos-tabs-tab-desenvolvimento{
@@ -553,6 +509,10 @@ body{
   height: 80px;
 }
 .nav-link#tecnicos-tabs-tab-modelagem{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#tecnicos-tabs-tab-dados{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
