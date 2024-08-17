@@ -3,6 +3,7 @@ import { Linguagens } from "./components/linguagens.js";
 import { Humanas } from "./components/humanas.js";
 import { Natureza } from "./components/natureza.js";
 import { Matematica } from "./components/matematica.js";
+import { Certificados } from "./components/certificados.js";
 import { Link } from "react-router-dom";
 
 function Ppe() {
@@ -15,6 +16,9 @@ function Ppe() {
       <Natureza />
       <br />
       <Matematica />
+      <br />
+      <Certificados />
+      <br />
       <Link to="/"><button className="ppe">Voltar</button></Link>
     </div>
   );
