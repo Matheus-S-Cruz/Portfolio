@@ -177,7 +177,7 @@ export const Materias = () => {
     {
       titulo: "Revista Literária",
       descricao:
-        "O Projeto de Revista Literária ainda não foi concluído, vamos atualizá-lo em breve. ",
+        "O Projeto de Revista Literária está sendo realizado durante o ano, nós estamos construindo um site onde fazemos uma revista sobre alguns livros abordados em vestibulares, como a UFSC. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: revista,
       link: "https://docs.google.com/document/d/1tWFwEhayxTxanb8vQWTysAUnqCDVH3lj11aNxayKjgQ/edit?usp=sharing",
