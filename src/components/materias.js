@@ -17,6 +17,8 @@ import ecologia from "../images/ecologia.png";
 import mapamentalcircuito from "../images/mapamentalcircuito.png";
 import plastico from "../images/plastico.png";
 import magnetismo from "../images/magnetismo.png";
+import regime from "../images/regime.png";
+import urbanismo from "../images/urbanismo.png";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("natureza");
@@ -152,21 +154,21 @@ export const Materias = () => {
       trimestre: "primeiro",
     },
     {
-      titulo: "Crises Econômicas",
+      titulo: "Regimes totalitaristas",
       descricao:
-        "Nessa atividade era necessário realizar a busca de informações em como as tecnologias da 2º Revolução Industrial impactaram a sociedade da época em um determinado país e como essas tecnologias são utilizadas atualmente. O país escolhido foi a Alemanha.",
+        "Nessa atividade os alunos pesquisaram sobre filmes que retratam regimes totalitaristas e fizeram uma análise sobre o mesmo, utilizamos a plataforma canva para criar a apresentação. O filme que meu grupo escolheu foi Coraline. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: revolucao,
-      link: "https://docs.google.com/document/d/1VRbJoFD6udj6SWvVQDRFi35VaJ3G91dG32VkyLOyi-4/edit?usp=sharing",
+      imgUrl: regime,
+      link: "https://docs.google.com/document/d/1i36CtHiluWNJX1e4bquS0M7ODytFLrgjNJW46_3t3sk/edit?usp=sharing",
       trimestre: "segundo",
     },
     {
-      titulo: "História de Anna Amélia",
+      titulo: "Urbanismo e cultura no começo do século XX",
       descricao:
-        "Nessa aula nós assistimos o filme 1917 e fizemos uma análise sobre o mesmo. Foi uma atividade muito interessante e que nos proporcionou uma visão diferente sobre a Primeira Guerra Mundial.",
+        "Nessa atividade nós precisamos entrar no site Brasiliana Fotográfica e montar uma história com as fotos disponíveis, a história deveria ser sobre a cultura e o urbanismo no começo do século XX. Eu escolhi falar sobre Anna Amélia, uma das primeiras fotógrafas do Brasil. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: filme1917,
-      link: "https://docs.google.com/document/d/1kLGXOK4Y_DukgFhUWszDNYc5AtuHH69dINPNTjFaja8/edit?usp=sharing",
+      imgUrl: urbanismo,
+      link: "https://docs.google.com/document/d/16a9CXw6nxBK0RVn-6LddArFtENXskjh6DzqV8bTnvhM/edit?usp=sharing",
       trimestre: "segundo",
     },
   ];
