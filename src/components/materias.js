@@ -19,6 +19,8 @@ import plastico from "../images/plastico.png";
 import magnetismo from "../images/magnetismo.png";
 import regime from "../images/regime.png";
 import urbanismo from "../images/urbanismo.png";
+import banca from "../images/banca.jpg";
+import banco from "../images/banco.png";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("natureza");
@@ -108,19 +110,19 @@ export const Materias = () => {
     {
       titulo: "Filme Quebrando a Banca",
       descricao:
-        "Nesta atividade nosso objetivo foi produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Ângulos com todas as instruções e demais elementos necessários. ",
+        "Nesta atividade nós assistimos o filme Quebrando a Banca e fizemos uma análise sobre o mesmo, respondendo um questionário. Foi uma atividade muito interessante e que nos proporcionou uma visão diferente sobre a matemática. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: trigonometria,
-      link: "https://docs.google.com/document/d/1HyQAysPajJ-0Yjk71QgKzRuT-nL5_uMeM8kc2uxpuqc/edit?usp=sharing",
+      imgUrl: banca,
+      link: "https://docs.google.com/document/d/1odjK65Bjz_prmHpTKqfG9A2gAXM3IOvUGYyvFqBS-x0/edit?usp=sharing",
       trimestre: "segundo",
     },
     {
-      titulo: "Arcos e Ângulos",
+      titulo: "Banco Imobiliário",
       descricao:
-        "Nesta atividade nosso objetivo foi produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e Ângulos com todas as instruções e demais elementos necessários. ",
+        "Nesta atividade o objetivo dos alunos era criar um jogo de tabuleiro com o tema de matemática, inspirado no Banco Imobiliário. O jogo que eu e meu grupo criamos foi o Banco do Mané, onde o objetivo era comprar e vender propriedades, e o jogador que tivesse mais tainhas no final do jogo vencia. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: trigonometria,
-      link: "https://docs.google.com/document/d/1PpHyNXU31IR4bwBE2LGAHMYCuIiyaqHRzIFGSzXR5zA/edit?usp=sharing",
+      imgUrl: banco,
+      link: "https://docs.google.com/document/d/1uBjHk4FKRfZOBx-CJaVBtDCNBpCy_D37J9Dbg-v115A/edit?usp=sharing",
       trimestre: "segundo",
     },
   ];
