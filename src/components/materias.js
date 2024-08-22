@@ -238,6 +238,7 @@ export const Materias = () => {
           <h2 id="materias" className="text-4xl font-semibold">
             Projetos das Matérias
           </h2>
+          <p className="text-base p-3">Escolha a matéria desejada e depois o trimestre</p>
         </div>
         
         <div className="flex justify-center space-x-4 mb-8">

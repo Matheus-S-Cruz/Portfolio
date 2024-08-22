@@ -162,6 +162,7 @@ export const Tecnico = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-semibold">Projetos do Técnico</h2>
+          <p className="text-base p-3">Escolha a matéria desejada e depois o trimestre</p>
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
