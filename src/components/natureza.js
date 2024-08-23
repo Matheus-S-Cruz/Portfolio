@@ -16,11 +16,12 @@ export const Natureza = () => {
 
     return (
         <div>
-            <h1 className='py-16 text-2xl font-semibold'>Natureza</h1>
+            <h1 className='py-12 text-2xl font-semibold'>Natureza</h1>
             <div>
                 <div className="curriculo-container p-6 rounded-lg">
                     <h2 className="text-2xl font-bold mb-4 text-center">Certificados</h2>
                     <div className="flex flex-col items-center">
+                        <h3 className='p-4'>Projetos de Sistemas Web</h3>
                         <img
                             ref={imageRef}
                             src={certificadoimg}
