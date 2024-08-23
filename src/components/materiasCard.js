@@ -13,7 +13,7 @@ export const Cards = ({ titulo, descricao, imgUrl, link, mais }) => {
       <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <img src={imgUrl} className="w-full h-48 object-cover" alt={titulo} />
         <div className="p-4">
-          <h4 className="text-xl font-semibold">{titulo}</h4>
+          <h4 className="text-xl font-semibold text-gray-900">{titulo}</h4>
           <p className="text-gray-700">{descricao}</p>
           <p className="text-blue-500 mt-2">{mais}</p>
         </div>
