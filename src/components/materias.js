@@ -20,6 +20,8 @@ import regime from "../images/regime.png";
 import urbanismo from "../images/urbanismo.png";
 import banca from "../images/banca.jpg";
 import banco from "../images/banco.png";
+import maquete from "../images/maquete.jpg";
+import solitaria from "../images/solitaria.jpg";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -215,17 +217,17 @@ export const Materias = () => {
     },
     {
       titulo: "Maquete Quartinho",
-      descricao: "Atividade ainda não finalizada. ",
+      descricao: "Nessa atividade nós estudamos o livro Solitária e fizemos uma maquete sobre um dos eventos do livro, com o objetivo de nos aproximarmos com a leitura dos vestibulares. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: trigonometria,
+      imgUrl: maquete,
       link: "https://docs.google.com/document/d/1_sFCShpvb78ykG-yXjZmwAnd17pUHvDdx-Jc5YxSu0E/edit?usp=sharing",
       trimestre: "segundo",
     },
     {
-      titulo: "Poema",
-      descricao: "Atividade ainda não finalizada. ",
+      titulo: "Poema: Soneto de Pertencimento",
+      descricao: "Ainda sobre o estudo do livro Solitária, nós fizemos um poema com estrutura de soneto sobre algum dos temas abordados no livro. Meu poema foi sobre a relação entre empregada e patroa e o sentimento de pertencimento que aprisona a trabalhadora. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: trigonometria,
+      imgUrl: solitaria,
       link: "https://docs.google.com/document/d/11u3G1ak0wSJTcsru_prE350xCFaUkG5-emqC045eVnw/edit?usp=sharing",
       trimestre: "segundo",
     },
