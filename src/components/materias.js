@@ -22,6 +22,7 @@ import banca from "../images/banca.jpg";
 import banco from "../images/banco.png";
 import maquete from "../images/maquete.jpg";
 import solitaria from "../images/solitaria.jpg";
+import platao from "../images/platao.png";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -127,6 +128,15 @@ export const Materias = () => {
       imgUrl: banco,
       link: "https://docs.google.com/document/d/1uBjHk4FKRfZOBx-CJaVBtDCNBpCy_D37J9Dbg-v115A/edit?usp=sharing",
       trimestre: "segundo",
+    },
+    {
+      titulo: "Poliedros de Platão",
+      descricao:
+        "Durante essa atividade nós estudamos sobre os poliedros de Platão e fizemos uma apresentação sobre o tema. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: platao,
+      link: "https://docs.google.com/document/d/1HBnDbBH4ALe8Wo4xvHOut2avb3xFtTqqV4sx40oYi40/edit?usp=sharing",
+      trimestre: "terceiro",
     },
   ];
 
