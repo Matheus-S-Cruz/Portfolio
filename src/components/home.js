@@ -29,7 +29,7 @@ export const Home = () => {
               desenvolvedor FullStack e conseguir um estágio em uma empresa de
               tecnologia.
             </p>
-            <a className="text-green-600 hover:text-green-700" href="https://docs.google.com/document/d/1aXWJkpDHYkB9ixQOlVPil4nN9J-Ccd5hnwL2ofaINQs/edit?usp=sharing">
+            <a className="text-green-600 hover:text-green-700" href="https://docs.google.com/document/d/1U2h8JRwAYashpvB3S7njwlaUE7NqF98Q3Tkue9RgFpg/edit?usp=sharing">
               Saiba Mais!
             </a>
           </div>
