@@ -25,6 +25,10 @@ import solitaria from "../images/solitaria.jpg";
 import platao from "../images/platao.png";
 import mr8 from "../images/mr8.png";
 import guerrafria from "../images/guerrafria.png";
+import desequilibrioambiental from "../images/desequilibrioambiental.jpg";
+import emissaoradioativa from "../images/emissaoradioativa.png";
+import eletricidade from "../images/eletricidade.png";
+import inorganica from "../images/inorganica.png";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -104,36 +108,36 @@ export const Materias = () => {
     {
       titulo: "Desequilíbrio Ambiental",
       descricao:
-        "Nesta atividade nós tivemos como objetivo aprender sobre as relações ecológicas entre os seres vivos. Nós fizemos uma revista sobre o tema. ",
+        "Com esta atividade, nós estudamos o impacto humano no meio ambiente e como isso afeta a natureza. Fizemos uma apresentação sobre o tema. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: ecologia,
-      link: "https://docs.google.com/document/d/1e-JP8UYoA_Ab2_mtc3143ejoo9txk9fHjUvMHDYNFNQ/edit?usp=sharing",
+      imgUrl: desequilibrioambiental,
+      link: "https://docs.google.com/document/d/115jkbsm0-zomqOFfL70Ab6hPVh-9AiQfvIcJqJUpcC0/edit?usp=sharing",
       trimestre: "terceiro",
     },
     {
       titulo: "Atividade Tai",
       descricao:
-        "Nesta atividade nós tivemos como objetivo aprender sobre circuitos elétricos e suas características. A atividade foi realizar um mapa mental pelo Canva. ",
+        "Nessa atividade nós fizemos um estudo dirigido sobre eletricidade, para abordar o tema um pouco mais profundamente para reforçar o aprendizado. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: mapamentalcircuito,
-      link: "https://docs.google.com/document/d/1lVfmCjL84-tMiMRYvMR9pTNrU0PRPKfr6IQq5Iz4Zrs/edit?usp=sharing",
+      imgUrl: eletricidade,
+      link: "https://docs.google.com/document/d/1DOOLHVeF90W6GsbfreiT9NP71hdpM6ybgstjqdl_69o/edit?usp=sharing",
       trimestre: "terceiro",
     },
     {
       titulo: "Emissões Radioativas",
       descricao:
-        "Nesta atividade nós estudamos sobre o uso do plástico e suas consequências para o meio ambiente. Os alunos criaram cartazes para espalhar pela escola e promover a conscientização sobre o tema. ",
+        "Nesta atividade nós tivemos como objetivo aprender sobre as emissões radioativas e seus impactos no meio ambiente. Para entendermos melhor o tema, fizemos uma apresentação sobre o enriquecimento de urânio ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: plastico,
-      link: "https://docs.google.com/document/d/1cO36r-K9R8h61_5Cmc4FvTqFh-ZX-dEfoKPCYftiqhw/edit?usp=sharing",
+      imgUrl: emissaoradioativa,
+      link: "https://docs.google.com/document/d/1a49_53sJ9NJHdQ6WSkoygeNPMc72aL4HSDD95NkTqXw/edit?usp=sharing",
       trimestre: "terceiro",
     },
     {
       titulo: "Atividade de Autoria",
-      descricao: "Linha do Tempo Magnetismo. ",
+      descricao: "Durante essa aula fizemos alguns exercícios de revisão de inorgânica para nos prepararmos para o exame do PASSE. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: magnetismo,
-      link: "https://docs.google.com/document/d/1UyLcm6HxdrbEFv00-UuG1w4y7KO6OnPU_WJHm-ySmoM/edit?usp=sharing",
+      imgUrl: inorganica,
+      link: "https://docs.google.com/document/d/17Gkq2bsuWJkvcSf-JAZUXRHVyf7p3zIa4OBp9vjAadA/edit?usp=sharing",
       trimestre: "terceiro",
     },
   ];
