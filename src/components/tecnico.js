@@ -15,6 +15,8 @@ import apigithub from "../images/apigithub.png";
 import biblio from "../images/biblio.png";
 import joomla from "../images/joomla.png";
 import leftrightjoin from "../images/leftrightjoin.png";
+import clientespagina from "../images/clientespagina.png"
+import jogodavelha from "../images/jogodavelha.png"
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -176,6 +178,27 @@ export const Tecnico = () => {
     },
   ];
 
+  const aplicativo = [
+    {
+      titulo: "Atividade Express",
+      descricao:
+        "Nessa atividade nós utilizamos express para realizar um projeto CRUD em node. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: clientespagina,
+      trimestre: "terceiro",
+      link: "https://docs.google.com/document/d/1NTYfM7B7yAKWrWe_txcJIMDVMgkIgv6gxuzCZhkAz5Q/edit?usp=sharing",
+    },
+    {
+      titulo: "Jogo da Velha",
+      descricao:
+        "Durante a aula nós fizemos um jogo da velha usando react. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: jogodavelha,
+      trimestre: "terceiro",
+      link: "https://docs.google.com/document/d/1hUxiJIWzzxsWUWjNKgtrgUisTbUfIP2Lp2Wl5mYoCbw/edit?usp=sharing",
+    },
+  ];
+
   return (
     <section className="py-16" id="tecnico">
       <div className="container mx-auto px-4">
@@ -256,6 +279,16 @@ export const Tecnico = () => {
           >
             Banco de Dados
           </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "aplicativo"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("aplicativo")}
+          >
+            Programação de Aplicativos
+          </button>
         </div>
         <div className="flex flex-wrap">
           {selectedCategory === "desenvolvimento" &&
@@ -278,6 +311,12 @@ export const Tecnico = () => {
               ))}
           {selectedCategory === "dados" &&
             dados
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+            {selectedCategory === "aplicativo" &&
+            aplicativo
               .filter((projeto) => projeto.trimestre === selectedTrimestre)
               .map((projeto, index) => (
                 <TecnicoCards key={index} {...projeto} />
