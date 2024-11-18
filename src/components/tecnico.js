@@ -162,7 +162,7 @@ export const Tecnico = () => {
     {
       titulo: "Banco de Dados Biblioteca",
       descricao:
-        "Nessa atividade fizemos um projeto de Banco de Dados para uma biblioteca, onde aprendi sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
+        "Nessa atividade fizemos um projeto de Banco de Dados para uma biblioteca, onde aprendemos sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: medico,
       trimestre: "terceiro",
