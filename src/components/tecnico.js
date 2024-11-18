@@ -18,6 +18,7 @@ import leftrightjoin from "../images/leftrightjoin.png";
 import clientespagina from "../images/clientespagina.png"
 import jogodavelha from "../images/jogodavelha.png"
 import testesdesistemas from "../images/testes.png"
+import biblioteca from "../images/biblioteca.png"
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -164,7 +165,7 @@ export const Tecnico = () => {
       descricao:
         "Nessa atividade fizemos um projeto de Banco de Dados para uma biblioteca, onde aprendemos sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: medico,
+      imgUrl: biblioteca,
       trimestre: "terceiro",
       link: "https://docs.google.com/document/d/1qQV5QH-4hjaitkdL2AaQmIwFRgy_9YTqtdgWFteS138/edit?usp=sharing",
     },
