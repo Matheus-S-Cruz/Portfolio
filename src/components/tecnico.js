@@ -14,6 +14,7 @@ import api from "../images/api.png";
 import apigithub from "../images/apigithub.png";
 import biblio from "../images/biblio.png";
 import joomla from "../images/joomla.png";
+import leftrightjoin from "../images/leftrightjoin.png";
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -154,6 +155,24 @@ export const Tecnico = () => {
       imgUrl: normalização,
       trimestre: "segundo",
       link: "https://docs.google.com/document/d/1hPZuR3fVPiPjw_oi6a5PW1ElQZbwLq8HluYiD3fRpaA/edit?usp=sharing",
+    },
+    {
+      titulo: "Banco de Dados Biblioteca",
+      descricao:
+        "Nessa atividade fizemos um projeto de Banco de Dados para uma biblioteca, onde aprendi sobre o uso de métodos HTTP, REST, e o uso de um banco de dados. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: medico,
+      trimestre: "terceiro",
+      link: "https://docs.google.com/document/d/1qQV5QH-4hjaitkdL2AaQmIwFRgy_9YTqtdgWFteS138/edit?usp=sharing",
+    },
+    {
+      titulo: "Left e Right JOIN no PgAdmin",
+      descricao:
+        "Nessa atividade utilizamos os comandos LEFT e RIGHT JOIN no PgAdmin para fazer consultas em um banco de dados. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: leftrightjoin,
+      trimestre: "terceiro",
+      link: "https://docs.google.com/document/d/1dqJhi-YYw6_bDm53YYv6cF-43m-Qq1wGe3Cq-378R48/edit?usp=sharing",
     },
   ];
 
