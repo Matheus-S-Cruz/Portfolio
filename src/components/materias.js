@@ -29,6 +29,9 @@ import desequilibrioambiental from "../images/desequilibrioambiental.jpg";
 import emissaoradioativa from "../images/emissaoradioativa.png";
 import eletricidade from "../images/eletricidade.png";
 import inorganica from "../images/inorganica.png";
+import redacao3 from "../images/redacao3.png";
+import revistamodernismo from "../images/revistamodernismo.png";
+import crianca from "../images/crianca.jpg";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -299,6 +302,40 @@ export const Materias = () => {
       imgUrl: solitaria,
       link: "https://docs.google.com/document/d/11u3G1ak0wSJTcsru_prE350xCFaUkG5-emqC045eVnw/edit?usp=sharing",
       trimestre: "segundo",
+    },
+    {
+      titulo: "Terceira Redação Online",
+      descricao:
+        "Durante esse dia, fizemos uma redação baseada no modelo ENEM, para realizar avaliações da capacidade dos alunos, possibilitando uma revisão mais fácil para a professora, que pode focar em ensinar os pontos fracos dos estudantes. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: redacao3,
+      link: "https://docs.google.com/document/d/1YyKhjetPV74dFyYaPztRCtW3EcgroPBQ1gjZ04LaIO8/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Revista Literária Modernismo",
+      descricao:
+        "Nessa atividade nós estudamos o Modernismo fazendo uma entrevista onde nós encorporamos um dos autores do movimento, o do nosso grupo foi Monteiro Lobato. Essa atividade está na Revista Literária. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: revistamodernismo,
+      link: "https://docs.google.com/document/d/1V1oDMSKrmmoSHR6UkHp_upcji27Uyx_-mlxVQav6xhw/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Tropicalismo",
+      descricao: "A atividade será postada em breve ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: maquete,
+      link: "",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Foto Minha Criança",
+      descricao: "A foto que eu escolhi foi esssa porque nela estou com a minha dinda, que foi muito importante para mim, principalmente na minha infância. ",
+      mais: "",
+      imgUrl: crianca,
+      link: "",
+      trimestre: "terceiro",
     },
   ];
 
