@@ -209,7 +209,7 @@ export const Tecnico = () => {
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: testesdesistemas,
       trimestre: "terceiro",
-      link: "https://docs.google.com/document/d/1NTYfM7B7yAKWrWe_txcJIMDVMgkIgv6gxuzCZhkAz5Q/edit?usp=sharing",
+      link: "https://docs.google.com/document/d/1WFbHfVixCJhEjUyqHLNGBkpPSVRktWbMx6dS4rQTniU/edit?usp=sharing",
     },
   ];
 
