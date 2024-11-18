@@ -17,6 +17,7 @@ import joomla from "../images/joomla.png";
 import leftrightjoin from "../images/leftrightjoin.png";
 import clientespagina from "../images/clientespagina.png"
 import jogodavelha from "../images/jogodavelha.png"
+import testesdesistemas from "../images/testes.png"
 
 export const Tecnico = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -199,6 +200,18 @@ export const Tecnico = () => {
     },
   ];
 
+  const testes = [
+    {
+      titulo: "Apresentação de Testes de Sistemas",
+      descricao:
+        "Nessa atividade foi feita uma prova para reforçar os conteúdos aprendidos durante o ano, após isso nós fizemos uma apresentação sobre a matéria e falamos sobre uma das questões escolhida da prova. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: testesdesistemas,
+      trimestre: "terceiro",
+      link: "https://docs.google.com/document/d/1NTYfM7B7yAKWrWe_txcJIMDVMgkIgv6gxuzCZhkAz5Q/edit?usp=sharing",
+    },
+  ];
+
   return (
     <section className="py-16" id="tecnico">
       <div className="container mx-auto px-4">
@@ -289,6 +302,16 @@ export const Tecnico = () => {
           >
             Programação de Aplicativos
           </button>
+          <button
+            className={`px-4 py-2 rounded-full ${
+              selectedCategory === "testes"
+                ? "bg-gray-800 text-white"
+                : "bg-gray-900"
+            }`}
+            onClick={() => setSelectedCategory("testes")}
+          >
+            Testes de Sistemas
+          </button>
         </div>
         <div className="flex flex-wrap">
           {selectedCategory === "desenvolvimento" &&
@@ -317,6 +340,12 @@ export const Tecnico = () => {
               ))}
             {selectedCategory === "aplicativo" &&
             aplicativo
+              .filter((projeto) => projeto.trimestre === selectedTrimestre)
+              .map((projeto, index) => (
+                <TecnicoCards key={index} {...projeto} />
+              ))}
+            {selectedCategory === "testes" &&
+            testes
               .filter((projeto) => projeto.trimestre === selectedTrimestre)
               .map((projeto, index) => (
                 <TecnicoCards key={index} {...projeto} />
