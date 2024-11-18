@@ -23,6 +23,8 @@ import banco from "../images/banco.png";
 import maquete from "../images/maquete.jpg";
 import solitaria from "../images/solitaria.jpg";
 import platao from "../images/platao.png";
+import mr8 from "../images/mr8.png";
+import guerrafria from "../images/guerrafria.png";
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -98,6 +100,41 @@ export const Materias = () => {
       imgUrl: magnetismo,
       link: "https://docs.google.com/document/d/1UyLcm6HxdrbEFv00-UuG1w4y7KO6OnPU_WJHm-ySmoM/edit?usp=sharing",
       trimestre: "segundo",
+    },
+    {
+      titulo: "Desequilíbrio Ambiental",
+      descricao:
+        "Nesta atividade nós tivemos como objetivo aprender sobre as relações ecológicas entre os seres vivos. Nós fizemos uma revista sobre o tema. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: ecologia,
+      link: "https://docs.google.com/document/d/1e-JP8UYoA_Ab2_mtc3143ejoo9txk9fHjUvMHDYNFNQ/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Atividade Tai",
+      descricao:
+        "Nesta atividade nós tivemos como objetivo aprender sobre circuitos elétricos e suas características. A atividade foi realizar um mapa mental pelo Canva. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: mapamentalcircuito,
+      link: "https://docs.google.com/document/d/1lVfmCjL84-tMiMRYvMR9pTNrU0PRPKfr6IQq5Iz4Zrs/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Emissões Radioativas",
+      descricao:
+        "Nesta atividade nós estudamos sobre o uso do plástico e suas consequências para o meio ambiente. Os alunos criaram cartazes para espalhar pela escola e promover a conscientização sobre o tema. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: plastico,
+      link: "https://docs.google.com/document/d/1cO36r-K9R8h61_5Cmc4FvTqFh-ZX-dEfoKPCYftiqhw/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Atividade de Autoria",
+      descricao: "Linha do Tempo Magnetismo. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: magnetismo,
+      link: "https://docs.google.com/document/d/1UyLcm6HxdrbEFv00-UuG1w4y7KO6OnPU_WJHm-ySmoM/edit?usp=sharing",
+      trimestre: "terceiro",
     },
   ];
 
@@ -185,6 +222,24 @@ export const Materias = () => {
       imgUrl: urbanismo,
       link: "https://docs.google.com/document/d/16a9CXw6nxBK0RVn-6LddArFtENXskjh6DzqV8bTnvhM/edit?usp=sharing",
       trimestre: "segundo",
+    },
+    {
+      titulo: "Ditadura no Brasil",
+      descricao:
+        "Durante essa aula nós estudamos sobre a ditadura no Brasil e fizemos uma apresentação sobre algo relacionado ao tema. Meu grupo escolheu falar sobre o Movimento Revolucionário 8 de Outubro. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: mr8,
+      link: "https://docs.google.com/document/d/1t-LC47hpodm5TsbNucTHmFfHk7w28fP0TBq2n_TdDjc/edit?usp=sharing",
+      trimestre: "terceiro",
+    },
+    {
+      titulo: "Guerra Fria",
+      descricao:
+        "Nessa atividade nós estudamos sobre a Guerra Fria e fizemos uma apresentação sobre o tema para entender mais a fundo sobre as relaões ocorridas durante o tempo e como o mundo se movia durante o período. ",
+      mais: "Clique para ver mais sobre a atividade",
+      imgUrl: guerrafria,
+      link: "https://docs.google.com/document/d/1hFGJRg1_Vgk0vpx88imyyK5ffuLqKtZv9mT-bsaEodI/edit?usp=sharing",
+      trimestre: "terceiro",
     },
   ];
 
