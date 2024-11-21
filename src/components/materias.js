@@ -32,6 +32,7 @@ import inorganica from "../images/inorganica.png";
 import redacao3 from "../images/redacao3.png";
 import revistamodernismo from "../images/revistamodernismo.png";
 import crianca from "../images/crianca.jpg";
+import tropicalismo from "../images/tropicalismo.png"
 
 export const Materias = () => {
   const [selectedCategory, setSelectedCategory] = useState("null");
@@ -323,10 +324,10 @@ export const Materias = () => {
     },
     {
       titulo: "Tropicalismo",
-      descricao: "A atividade será postada em breve ",
+      descricao: "Nessa atividade foi feita uma apresentação sobre o Tropicalismo, movimento cultural de vanguarda que ocorreu no Brasil no final da década de 60 nas artes, principalmente na música. Após isso, fizemos um vídeoclipe sobre uma música do tempo. ",
       mais: "Clique para ver mais sobre a atividade",
-      imgUrl: maquete,
-      link: "",
+      imgUrl: tropicalismo,
+      link: "https://www.canva.com/design/DAGV5lhZAlw/VVlaDYR6YIqNp9JycmZmiA/edit?utm_content=DAGV5lhZAlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       trimestre: "terceiro",
     },
     {
