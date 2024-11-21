@@ -327,7 +327,7 @@ export const Materias = () => {
       descricao: "Nessa atividade foi feita uma apresentação sobre o Tropicalismo, movimento cultural de vanguarda que ocorreu no Brasil no final da década de 60 nas artes, principalmente na música. Após isso, fizemos um vídeoclipe sobre uma música do tempo. ",
       mais: "Clique para ver mais sobre a atividade",
       imgUrl: tropicalismo,
-      link: "https://www.canva.com/design/DAGV5lhZAlw/VVlaDYR6YIqNp9JycmZmiA/edit?utm_content=DAGV5lhZAlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      link: "https://docs.google.com/document/d/1G6rj6fTorHozQBR9CErTeClsrvp6Qqn4ibKVtRUYVNk/edit?usp=sharing",
       trimestre: "terceiro",
     },
     {
